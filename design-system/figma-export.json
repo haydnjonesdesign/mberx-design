@@ -1,0 +1,4838 @@
+{
+  "styles": {
+    "colors": [],
+    "textStyles": [
+      {
+        "name": "Heading 1",
+        "token": "heading-1",
+        "type": "text",
+        "description": "Used for the main screen title, should be used only once per screen. It pairs with base body.",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading 2",
+        "token": "heading-2",
+        "type": "text",
+        "description": "Used for main section titles within a screen. Provides hierarchy below Heading 1 and should be used sparingly. Pairs with body base.",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading 3",
+        "token": "heading-3",
+        "type": "text",
+        "description": "Used for subsection titles or important content blocks. Helps break down information within a section. Pairs with body sm or body base.",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Heading 4",
+        "token": "heading-4",
+        "type": "text",
+        "description": "Used for subsection titles or important content blocks. Helps break down information within a section. Pairs with body sm or body base.",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body base",
+        "token": "body-base",
+        "type": "text",
+        "description": "Default paragraph style for most content. Optimized for readability at medium sizes. Used across long-form text, descriptions, and details.",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body base medium",
+        "token": "body-base-medium",
+        "type": "text",
+        "description": "Same as body base, but with medium font weight. Provides subtle emphasis for key points, labels, or short content blocks.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body sm",
+        "token": "body-sm",
+        "type": "text",
+        "description": "Used for secondary or supporting text. Ideal for captions, metadata, and content with lower emphasis.",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body sm medium",
+        "token": "body-sm-medium",
+        "type": "text",
+        "description": "Same as body small, but with medium font weight. Provides stronger emphasis for small text, such as inline labels or status indicators.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body xs",
+        "token": "body-xs",
+        "type": "text",
+        "description": "Used for fine print, footnotes, and dense UI elements where space is limited. Should not be overused.",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Body xs medium",
+        "token": "body-xs-medium",
+        "type": "text",
+        "description": "Same as body xs, but with medium font weight. Adds clarity and hierarchy in tight spaces like tables or input helpers.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Link base",
+        "token": "link-base",
+        "type": "text",
+        "description": "Default link style for inline navigation or actions. Used in body content, menus, or lists.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px",
+        "textDecoration": "underline"
+      },
+      {
+        "name": "Link sm",
+        "token": "link-sm",
+        "type": "text",
+        "description": "Used for inline links in smaller text contexts such as captions, footnotes, or secondary actions.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Link sm hover",
+        "token": "link-sm-hover",
+        "type": "text",
+        "description": "Used for inline links in smaller text contexts such as captions, footnotes, or secondary actions.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px",
+        "textDecoration": "underline"
+      },
+      {
+        "name": "Text field base",
+        "token": "text-field-base",
+        "type": "text",
+        "description": "Used for input text in standard fields. Optimized for readability at medium size with comfortable line height. Balances clarity with density for forms and interactive components.",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Text field sm",
+        "token": "text-field-sm",
+        "type": "text",
+        "description": "Used for input text in compact fields. Ideal for dense layouts or secondary forms where space is limited. Maintains legibility at smaller sizes.",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Button base",
+        "token": "button-base",
+        "type": "text",
+        "description": "Primary button text style. Optimized for legibility and balance within medium/large buttons.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "Button sm",
+        "token": "button-sm",
+        "type": "text",
+        "description": "Button text style for compact buttons. Used where space is limited while keeping readability.",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-thin",
+        "token": "tailwind-text-xs-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-extralight",
+        "token": "tailwind-text-xs-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-light",
+        "token": "tailwind-text-xs-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-normal",
+        "token": "tailwind-text-xs-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-medium",
+        "token": "tailwind-text-xs-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-semibold",
+        "token": "tailwind-text-xs-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-bold",
+        "token": "tailwind-text-xs-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-extrabold",
+        "token": "tailwind-text-xs-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xs/font-black",
+        "token": "tailwind-text-xs-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-thin",
+        "token": "tailwind-text-sm-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-extralight",
+        "token": "tailwind-text-sm-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-light",
+        "token": "tailwind-text-sm-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-normal",
+        "token": "tailwind-text-sm-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-medium",
+        "token": "tailwind-text-sm-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-semibold",
+        "token": "tailwind-text-sm-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-bold",
+        "token": "tailwind-text-sm-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-extrabold",
+        "token": "tailwind-text-sm-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-sm/font-black",
+        "token": "tailwind-text-sm-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-thin",
+        "token": "tailwind-text-base-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-extralight",
+        "token": "tailwind-text-base-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-light",
+        "token": "tailwind-text-base-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-normal",
+        "token": "tailwind-text-base-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-medium",
+        "token": "tailwind-text-base-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-semibold",
+        "token": "tailwind-text-base-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-bold",
+        "token": "tailwind-text-base-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-extrabold",
+        "token": "tailwind-text-base-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-base/font-bold",
+        "token": "tailwind-text-base-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-thin",
+        "token": "tailwind-text-lg-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-extralight",
+        "token": "tailwind-text-lg-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-light",
+        "token": "tailwind-text-lg-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-normal",
+        "token": "tailwind-text-lg-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-medium",
+        "token": "tailwind-text-lg-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-semibold",
+        "token": "tailwind-text-lg-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-bold",
+        "token": "tailwind-text-lg-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-extrabold",
+        "token": "tailwind-text-lg-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-lg/font-black",
+        "token": "tailwind-text-lg-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-thin",
+        "token": "tailwind-text-xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-extralight",
+        "token": "tailwind-text-xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-light",
+        "token": "tailwind-text-xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-normal",
+        "token": "tailwind-text-xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-medium",
+        "token": "tailwind-text-xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-semibold",
+        "token": "tailwind-text-xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-bold",
+        "token": "tailwind-text-xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-extrabold",
+        "token": "tailwind-text-xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-xl/font-black",
+        "token": "tailwind-text-xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "20px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-thin",
+        "token": "tailwind-text-2xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-extralight",
+        "token": "tailwind-text-2xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-light",
+        "token": "tailwind-text-2xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-normal",
+        "token": "tailwind-text-2xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-medium",
+        "token": "tailwind-text-2xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-semibold",
+        "token": "tailwind-text-2xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-bold",
+        "token": "tailwind-text-2xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-extrabold",
+        "token": "tailwind-text-2xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-2xl/font-black",
+        "token": "tailwind-text-2xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-thin",
+        "token": "tailwind-text-3xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-extralight",
+        "token": "tailwind-text-3xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-light",
+        "token": "tailwind-text-3xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-medium",
+        "token": "tailwind-text-3xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-normal",
+        "token": "tailwind-text-3xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-semibold",
+        "token": "tailwind-text-3xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-bold",
+        "token": "tailwind-text-3xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-extrabold",
+        "token": "tailwind-text-3xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-3xl/font-black",
+        "token": "tailwind-text-3xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-thin",
+        "token": "tailwind-text-4xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-extralight",
+        "token": "tailwind-text-4xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-light",
+        "token": "tailwind-text-4xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-normal",
+        "token": "tailwind-text-4xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-medium",
+        "token": "tailwind-text-4xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-semibold",
+        "token": "tailwind-text-4xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-bold",
+        "token": "tailwind-text-4xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-extrabold",
+        "token": "tailwind-text-4xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-4xl/font-black",
+        "token": "tailwind-text-4xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-thin",
+        "token": "tailwind-text-5xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-extralight",
+        "token": "tailwind-text-5xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-light",
+        "token": "tailwind-text-5xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-normal",
+        "token": "tailwind-text-5xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-medium",
+        "token": "tailwind-text-5xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-semibold",
+        "token": "tailwind-text-5xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-bold",
+        "token": "tailwind-text-5xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-extrabold",
+        "token": "tailwind-text-5xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-5xl/font-black",
+        "token": "tailwind-text-5xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "48px",
+        "lineHeight": "48px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-thin",
+        "token": "tailwind-text-6xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-extralight",
+        "token": "tailwind-text-6xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-light",
+        "token": "tailwind-text-6xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-normal",
+        "token": "tailwind-text-6xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-medium",
+        "token": "tailwind-text-6xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-semibold",
+        "token": "tailwind-text-6xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-bold",
+        "token": "tailwind-text-6xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-extrabold",
+        "token": "tailwind-text-6xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-6xl/font-black",
+        "token": "tailwind-text-6xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-thin",
+        "token": "tailwind-text-7xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-extralight",
+        "token": "tailwind-text-7xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-light",
+        "token": "tailwind-text-7xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-normal",
+        "token": "tailwind-text-7xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-medium",
+        "token": "tailwind-text-7xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-semibold",
+        "token": "tailwind-text-7xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-bold",
+        "token": "tailwind-text-7xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-extrabold",
+        "token": "tailwind-text-7xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-7xl/font-black",
+        "token": "tailwind-text-7xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "72px",
+        "lineHeight": "72px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-thin",
+        "token": "tailwind-text-8xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-extralight",
+        "token": "tailwind-text-8xl-font-extralight",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-light",
+        "token": "tailwind-text-8xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-normal",
+        "token": "tailwind-text-8xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-medium",
+        "token": "tailwind-text-8xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-semibold",
+        "token": "tailwind-text-8xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-bold",
+        "token": "tailwind-text-8xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-extrabold",
+        "token": "tailwind-text-8xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-8xl/font-black",
+        "token": "tailwind-text-8xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "96px",
+        "lineHeight": "96px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-thin",
+        "token": "tailwind-text-9xl-font-thin",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "100",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-extra-light",
+        "token": "tailwind-text-9xl-font-extra-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-light",
+        "token": "tailwind-text-9xl-font-light",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "300",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-normal",
+        "token": "tailwind-text-9xl-font-normal",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "400",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-medium",
+        "token": "tailwind-text-9xl-font-medium",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "500",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-semibold",
+        "token": "tailwind-text-9xl-font-semibold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-bold",
+        "token": "tailwind-text-9xl-font-bold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-extrabold",
+        "token": "tailwind-text-9xl-font-extrabold",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      },
+      {
+        "name": "tailwind/text-9xl/font-black",
+        "token": "tailwind-text-9xl-font-black",
+        "type": "text",
+        "fontFamily": "Inter",
+        "fontWeight": "900",
+        "fontSize": "128px",
+        "lineHeight": "128px",
+        "letterSpacing": "0px"
+      }
+    ],
+    "effectStyles": [
+      {
+        "name": "focus-ring",
+        "token": "focus-ring",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 0px 4px #0485f7, 0px 0px 0px 2px #f5f5f5",
+        "description": "Represent a focus state",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 0,
+            "spread": 4,
+            "color": "#0485f7"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 0,
+            "spread": 2,
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "name": "focus-ring-field",
+        "token": "focus-ring-field",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 0px 2px #0485f7",
+        "description": "Represent a focus state",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 0,
+            "spread": 2,
+            "color": "#0485f7"
+          }
+        ]
+      },
+      {
+        "name": "shadow-surface",
+        "token": "shadow-surface",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 1px 0px rgba(0, 0, 0, 0.3)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 1,
+            "blur": 2,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.04)"
+          },
+          {
+            "type": "inner-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.3)"
+          },
+          {
+            "type": "background-blur"
+          }
+        ]
+      },
+      {
+        "name": "shadow-field",
+        "token": "shadow-field",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 2px 4px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 1,
+            "blur": 2,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.04)"
+          },
+          {
+            "type": "background-blur"
+          },
+          {
+            "type": "inner-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 0,
+            "spread": 0,
+            "color": "rgba(255, 255, 255, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "shadow-overlay",
+        "token": "shadow-overlay",
+        "type": "effect",
+        "value": "box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.08), 0px -6px 12px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.06), inset 0px 0px 1px 0px rgba(0, 0, 0, 0)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 14,
+            "blur": 28,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.08)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": -6,
+            "blur": 12,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.03)"
+          },
+          {
+            "type": "background-blur"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 8,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "inner-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0)"
+          }
+        ]
+      },
+      {
+        "name": "shadow-switch",
+        "token": "shadow-switch",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.02), 0px 2px 10px 0px rgba(0, 0, 0, 0.06), 0px 0px 1px 0px rgba(0, 0, 0, 0.3)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 5,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.02)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 10,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "name": "shadow-tab",
+        "token": "shadow-tab",
+        "type": "effect",
+        "value": "box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 8,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.06)"
+          }
+        ]
+      },
+      {
+        "name": "inner",
+        "token": "inner",
+        "type": "effect",
+        "value": "box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.3)",
+        "effects": [
+          {
+            "type": "inner-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.3)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-sm",
+        "token": "tailwind-box-shadow-shadow-sm",
+        "type": "effect",
+        "value": "box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 1,
+            "blur": 2,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow",
+        "token": "tailwind-box-shadow-shadow",
+        "type": "effect",
+        "value": "box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 1,
+            "blur": 3,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 1,
+            "blur": 2,
+            "spread": -1,
+            "color": "rgba(0, 0, 0, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-md",
+        "token": "tailwind-box-shadow-shadow-md",
+        "type": "effect",
+        "value": "box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 4,
+            "blur": 6,
+            "spread": -1,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": -2,
+            "color": "rgba(0, 0, 0, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-lg",
+        "token": "tailwind-box-shadow-shadow-lg",
+        "type": "effect",
+        "value": "box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 10,
+            "blur": 15,
+            "spread": -3,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 4,
+            "blur": 6,
+            "spread": -4,
+            "color": "rgba(0, 0, 0, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-xl",
+        "token": "tailwind-box-shadow-shadow-xl",
+        "type": "effect",
+        "value": "box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 20,
+            "blur": 25,
+            "spread": -5,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 8,
+            "blur": 10,
+            "spread": -6,
+            "color": "rgba(0, 0, 0, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-2xl",
+        "token": "tailwind-box-shadow-shadow-2xl",
+        "type": "effect",
+        "value": "box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 25,
+            "blur": 50,
+            "spread": -12,
+            "color": "rgba(0, 0, 0, 0.25)"
+          }
+        ]
+      },
+      {
+        "name": "tailwind/Box Shadow/shadow-inner",
+        "token": "tailwind-box-shadow-shadow-inner",
+        "type": "effect",
+        "value": "box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.05)",
+        "effects": [
+          {
+            "type": "inner-shadow",
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.05)"
+          }
+        ]
+      }
+    ],
+    "gridStyles": []
+  },
+  "collections": {
+    "01_Base (Tailwind)": {
+      "id": "VariableCollectionId:1:2",
+      "modes": [
+        {
+          "id": "1:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "colors/slate/50",
+            "token": "colors-slate-50",
+            "type": "color",
+            "value": "#f8fafc"
+          },
+          {
+            "name": "colors/slate/100",
+            "token": "colors-slate-100",
+            "type": "color",
+            "value": "#f1f5f9"
+          },
+          {
+            "name": "colors/slate/200",
+            "token": "colors-slate-200",
+            "type": "color",
+            "value": "#e2e8f0"
+          },
+          {
+            "name": "colors/slate/300",
+            "token": "colors-slate-300",
+            "type": "color",
+            "value": "#cbd5e1"
+          },
+          {
+            "name": "colors/slate/400",
+            "token": "colors-slate-400",
+            "type": "color",
+            "value": "#94a3b8"
+          },
+          {
+            "name": "colors/slate/500",
+            "token": "colors-slate-500",
+            "type": "color",
+            "value": "#64748b"
+          },
+          {
+            "name": "colors/slate/600",
+            "token": "colors-slate-600",
+            "type": "color",
+            "value": "#475569"
+          },
+          {
+            "name": "colors/slate/700",
+            "token": "colors-slate-700",
+            "type": "color",
+            "value": "#334155"
+          },
+          {
+            "name": "colors/slate/800",
+            "token": "colors-slate-800",
+            "type": "color",
+            "value": "#1e293b"
+          },
+          {
+            "name": "colors/slate/900",
+            "token": "colors-slate-900",
+            "type": "color",
+            "value": "#0f172a"
+          },
+          {
+            "name": "colors/slate/950",
+            "token": "colors-slate-950",
+            "type": "color",
+            "value": "#020617"
+          },
+          {
+            "name": "colors/gray/50",
+            "token": "colors-gray-50",
+            "type": "color",
+            "value": "#f9fafb"
+          },
+          {
+            "name": "colors/gray/100",
+            "token": "colors-gray-100",
+            "type": "color",
+            "value": "#f3f4f6"
+          },
+          {
+            "name": "colors/gray/200",
+            "token": "colors-gray-200",
+            "type": "color",
+            "value": "#e5e7eb"
+          },
+          {
+            "name": "colors/gray/300",
+            "token": "colors-gray-300",
+            "type": "color",
+            "value": "#d1d5db"
+          },
+          {
+            "name": "colors/gray/400",
+            "token": "colors-gray-400",
+            "type": "color",
+            "value": "#9ca3af"
+          },
+          {
+            "name": "colors/gray/500",
+            "token": "colors-gray-500",
+            "type": "color",
+            "value": "#6b7280"
+          },
+          {
+            "name": "colors/gray/600",
+            "token": "colors-gray-600",
+            "type": "color",
+            "value": "#4b5563"
+          },
+          {
+            "name": "colors/gray/700",
+            "token": "colors-gray-700",
+            "type": "color",
+            "value": "#374151"
+          },
+          {
+            "name": "colors/gray/800",
+            "token": "colors-gray-800",
+            "type": "color",
+            "value": "#1f2937"
+          },
+          {
+            "name": "colors/gray/900",
+            "token": "colors-gray-900",
+            "type": "color",
+            "value": "#111827"
+          },
+          {
+            "name": "colors/gray/950",
+            "token": "colors-gray-950",
+            "type": "color",
+            "value": "#030712"
+          },
+          {
+            "name": "colors/zinc/50",
+            "token": "colors-zinc-50",
+            "type": "color",
+            "value": "#fafafa"
+          },
+          {
+            "name": "colors/zinc/100",
+            "token": "colors-zinc-100",
+            "type": "color",
+            "value": "#f4f4f5"
+          },
+          {
+            "name": "colors/zinc/200",
+            "token": "colors-zinc-200",
+            "type": "color",
+            "value": "#e4e4e7"
+          },
+          {
+            "name": "colors/zinc/300",
+            "token": "colors-zinc-300",
+            "type": "color",
+            "value": "#d4d4d8"
+          },
+          {
+            "name": "colors/zinc/400",
+            "token": "colors-zinc-400",
+            "type": "color",
+            "value": "#a1a1aa"
+          },
+          {
+            "name": "colors/zinc/500",
+            "token": "colors-zinc-500",
+            "type": "color",
+            "value": "#71717a"
+          },
+          {
+            "name": "colors/zinc/600",
+            "token": "colors-zinc-600",
+            "type": "color",
+            "value": "#52525b"
+          },
+          {
+            "name": "colors/zinc/700",
+            "token": "colors-zinc-700",
+            "type": "color",
+            "value": "#3f3f46"
+          },
+          {
+            "name": "colors/zinc/800",
+            "token": "colors-zinc-800",
+            "type": "color",
+            "value": "#27272a"
+          },
+          {
+            "name": "colors/zinc/900",
+            "token": "colors-zinc-900",
+            "type": "color",
+            "value": "#18181b"
+          },
+          {
+            "name": "colors/zinc/950",
+            "token": "colors-zinc-950",
+            "type": "color",
+            "value": "#09090b"
+          },
+          {
+            "name": "colors/neutral/50",
+            "token": "colors-neutral-50",
+            "type": "color",
+            "value": "#fafafa"
+          },
+          {
+            "name": "colors/neutral/100",
+            "token": "colors-neutral-100",
+            "type": "color",
+            "value": "#f5f5f5"
+          },
+          {
+            "name": "colors/neutral/200",
+            "token": "colors-neutral-200",
+            "type": "color",
+            "value": "#e5e5e5"
+          },
+          {
+            "name": "colors/neutral/300",
+            "token": "colors-neutral-300",
+            "type": "color",
+            "value": "#d4d4d4"
+          },
+          {
+            "name": "colors/neutral/400",
+            "token": "colors-neutral-400",
+            "type": "color",
+            "value": "#a3a3a3"
+          },
+          {
+            "name": "colors/neutral/500",
+            "token": "colors-neutral-500",
+            "type": "color",
+            "value": "#737373"
+          },
+          {
+            "name": "colors/neutral/600",
+            "token": "colors-neutral-600",
+            "type": "color",
+            "value": "#525252"
+          },
+          {
+            "name": "colors/neutral/700",
+            "token": "colors-neutral-700",
+            "type": "color",
+            "value": "#404040"
+          },
+          {
+            "name": "colors/neutral/800",
+            "token": "colors-neutral-800",
+            "type": "color",
+            "value": "#262626"
+          },
+          {
+            "name": "colors/neutral/900",
+            "token": "colors-neutral-900",
+            "type": "color",
+            "value": "#171717"
+          },
+          {
+            "name": "colors/neutral/950",
+            "token": "colors-neutral-950",
+            "type": "color",
+            "value": "#0a0a0a"
+          },
+          {
+            "name": "colors/stone/50",
+            "token": "colors-stone-50",
+            "type": "color",
+            "value": "#fafaf9"
+          },
+          {
+            "name": "colors/stone/100",
+            "token": "colors-stone-100",
+            "type": "color",
+            "value": "#f5f5f4"
+          },
+          {
+            "name": "colors/stone/200",
+            "token": "colors-stone-200",
+            "type": "color",
+            "value": "#e7e5e4"
+          },
+          {
+            "name": "colors/stone/300",
+            "token": "colors-stone-300",
+            "type": "color",
+            "value": "#d6d3d1"
+          },
+          {
+            "name": "colors/stone/400",
+            "token": "colors-stone-400",
+            "type": "color",
+            "value": "#a8a29e"
+          },
+          {
+            "name": "colors/stone/500",
+            "token": "colors-stone-500",
+            "type": "color",
+            "value": "#78716c"
+          },
+          {
+            "name": "colors/stone/600",
+            "token": "colors-stone-600",
+            "type": "color",
+            "value": "#57534e"
+          },
+          {
+            "name": "colors/stone/700",
+            "token": "colors-stone-700",
+            "type": "color",
+            "value": "#44403c"
+          },
+          {
+            "name": "colors/stone/800",
+            "token": "colors-stone-800",
+            "type": "color",
+            "value": "#292524"
+          },
+          {
+            "name": "colors/stone/900",
+            "token": "colors-stone-900",
+            "type": "color",
+            "value": "#1c1917"
+          },
+          {
+            "name": "colors/stone/950",
+            "token": "colors-stone-950",
+            "type": "color",
+            "value": "#0c0a09"
+          },
+          {
+            "name": "colors/red/50",
+            "token": "colors-red-50",
+            "type": "color",
+            "value": "#fef2f2"
+          },
+          {
+            "name": "colors/red/100",
+            "token": "colors-red-100",
+            "type": "color",
+            "value": "#fee2e2"
+          },
+          {
+            "name": "colors/red/200",
+            "token": "colors-red-200",
+            "type": "color",
+            "value": "#fecaca"
+          },
+          {
+            "name": "colors/red/300",
+            "token": "colors-red-300",
+            "type": "color",
+            "value": "#fca5a5"
+          },
+          {
+            "name": "colors/red/400",
+            "token": "colors-red-400",
+            "type": "color",
+            "value": "#f87171"
+          },
+          {
+            "name": "colors/red/500",
+            "token": "colors-red-500",
+            "type": "color",
+            "value": "#ef4444"
+          },
+          {
+            "name": "colors/red/600",
+            "token": "colors-red-600",
+            "type": "color",
+            "value": "#dc2626"
+          },
+          {
+            "name": "colors/red/700",
+            "token": "colors-red-700",
+            "type": "color",
+            "value": "#b91c1c"
+          },
+          {
+            "name": "colors/red/800",
+            "token": "colors-red-800",
+            "type": "color",
+            "value": "#991b1b"
+          },
+          {
+            "name": "colors/red/900",
+            "token": "colors-red-900",
+            "type": "color",
+            "value": "#7f1d1d"
+          },
+          {
+            "name": "colors/red/950",
+            "token": "colors-red-950",
+            "type": "color",
+            "value": "#450a0a"
+          },
+          {
+            "name": "colors/orange/50",
+            "token": "colors-orange-50",
+            "type": "color",
+            "value": "#fff7ed"
+          },
+          {
+            "name": "colors/orange/100",
+            "token": "colors-orange-100",
+            "type": "color",
+            "value": "#ffedd5"
+          },
+          {
+            "name": "colors/orange/200",
+            "token": "colors-orange-200",
+            "type": "color",
+            "value": "#fed7aa"
+          },
+          {
+            "name": "colors/orange/300",
+            "token": "colors-orange-300",
+            "type": "color",
+            "value": "#fdba74"
+          },
+          {
+            "name": "colors/orange/400",
+            "token": "colors-orange-400",
+            "type": "color",
+            "value": "#fb923c"
+          },
+          {
+            "name": "colors/orange/500",
+            "token": "colors-orange-500",
+            "type": "color",
+            "value": "#f97316"
+          },
+          {
+            "name": "colors/orange/600",
+            "token": "colors-orange-600",
+            "type": "color",
+            "value": "#ea580c"
+          },
+          {
+            "name": "colors/orange/700",
+            "token": "colors-orange-700",
+            "type": "color",
+            "value": "#c2410c"
+          },
+          {
+            "name": "colors/orange/800",
+            "token": "colors-orange-800",
+            "type": "color",
+            "value": "#9a3412"
+          },
+          {
+            "name": "colors/orange/900",
+            "token": "colors-orange-900",
+            "type": "color",
+            "value": "#7c2d12"
+          },
+          {
+            "name": "colors/orange/950",
+            "token": "colors-orange-950",
+            "type": "color",
+            "value": "#431407"
+          },
+          {
+            "name": "colors/amber/50",
+            "token": "colors-amber-50",
+            "type": "color",
+            "value": "#fffbeb"
+          },
+          {
+            "name": "colors/amber/100",
+            "token": "colors-amber-100",
+            "type": "color",
+            "value": "#fef3c7"
+          },
+          {
+            "name": "colors/amber/200",
+            "token": "colors-amber-200",
+            "type": "color",
+            "value": "#fde68a"
+          },
+          {
+            "name": "colors/amber/300",
+            "token": "colors-amber-300",
+            "type": "color",
+            "value": "#fcd34d"
+          },
+          {
+            "name": "colors/amber/400",
+            "token": "colors-amber-400",
+            "type": "color",
+            "value": "#fbbf24"
+          },
+          {
+            "name": "colors/amber/500",
+            "token": "colors-amber-500",
+            "type": "color",
+            "value": "#f59e0b"
+          },
+          {
+            "name": "colors/amber/600",
+            "token": "colors-amber-600",
+            "type": "color",
+            "value": "#d97706"
+          },
+          {
+            "name": "colors/amber/700",
+            "token": "colors-amber-700",
+            "type": "color",
+            "value": "#b45309"
+          },
+          {
+            "name": "colors/amber/800",
+            "token": "colors-amber-800",
+            "type": "color",
+            "value": "#92400e"
+          },
+          {
+            "name": "colors/amber/900",
+            "token": "colors-amber-900",
+            "type": "color",
+            "value": "#78350f"
+          },
+          {
+            "name": "colors/amber/950",
+            "token": "colors-amber-950",
+            "type": "color",
+            "value": "#451a03"
+          },
+          {
+            "name": "colors/lime/50",
+            "token": "colors-lime-50",
+            "type": "color",
+            "value": "#f7fee7"
+          },
+          {
+            "name": "colors/lime/100",
+            "token": "colors-lime-100",
+            "type": "color",
+            "value": "#ecfccb"
+          },
+          {
+            "name": "colors/lime/200",
+            "token": "colors-lime-200",
+            "type": "color",
+            "value": "#d9f99d"
+          },
+          {
+            "name": "colors/lime/300",
+            "token": "colors-lime-300",
+            "type": "color",
+            "value": "#bef264"
+          },
+          {
+            "name": "colors/lime/400",
+            "token": "colors-lime-400",
+            "type": "color",
+            "value": "#a3e635"
+          },
+          {
+            "name": "colors/lime/500",
+            "token": "colors-lime-500",
+            "type": "color",
+            "value": "#84cc16"
+          },
+          {
+            "name": "colors/lime/600",
+            "token": "colors-lime-600",
+            "type": "color",
+            "value": "#65a30d"
+          },
+          {
+            "name": "colors/lime/700",
+            "token": "colors-lime-700",
+            "type": "color",
+            "value": "#4d7c0f"
+          },
+          {
+            "name": "colors/lime/800",
+            "token": "colors-lime-800",
+            "type": "color",
+            "value": "#3f6212"
+          },
+          {
+            "name": "colors/lime/900",
+            "token": "colors-lime-900",
+            "type": "color",
+            "value": "#365314"
+          },
+          {
+            "name": "colors/lime/950",
+            "token": "colors-lime-950",
+            "type": "color",
+            "value": "#1a2e05"
+          },
+          {
+            "name": "colors/yellow/50",
+            "token": "colors-yellow-50",
+            "type": "color",
+            "value": "#fefce8"
+          },
+          {
+            "name": "colors/yellow/100",
+            "token": "colors-yellow-100",
+            "type": "color",
+            "value": "#fef9c3"
+          },
+          {
+            "name": "colors/yellow/200",
+            "token": "colors-yellow-200",
+            "type": "color",
+            "value": "#fef08a"
+          },
+          {
+            "name": "colors/yellow/300",
+            "token": "colors-yellow-300",
+            "type": "color",
+            "value": "#fde047"
+          },
+          {
+            "name": "colors/yellow/400",
+            "token": "colors-yellow-400",
+            "type": "color",
+            "value": "#facc15"
+          },
+          {
+            "name": "colors/yellow/500",
+            "token": "colors-yellow-500",
+            "type": "color",
+            "value": "#eab308"
+          },
+          {
+            "name": "colors/yellow/600",
+            "token": "colors-yellow-600",
+            "type": "color",
+            "value": "#ca8a04"
+          },
+          {
+            "name": "colors/yellow/700",
+            "token": "colors-yellow-700",
+            "type": "color",
+            "value": "#a16207"
+          },
+          {
+            "name": "colors/yellow/800",
+            "token": "colors-yellow-800",
+            "type": "color",
+            "value": "#854d0e"
+          },
+          {
+            "name": "colors/yellow/900",
+            "token": "colors-yellow-900",
+            "type": "color",
+            "value": "#713f12"
+          },
+          {
+            "name": "colors/yellow/950",
+            "token": "colors-yellow-950",
+            "type": "color",
+            "value": "#422006"
+          },
+          {
+            "name": "colors/green/50",
+            "token": "colors-green-50",
+            "type": "color",
+            "value": "#f0fdf4"
+          },
+          {
+            "name": "colors/green/100",
+            "token": "colors-green-100",
+            "type": "color",
+            "value": "#dcfce7"
+          },
+          {
+            "name": "colors/green/200",
+            "token": "colors-green-200",
+            "type": "color",
+            "value": "#bbf7d0"
+          },
+          {
+            "name": "colors/green/300",
+            "token": "colors-green-300",
+            "type": "color",
+            "value": "#86efac"
+          },
+          {
+            "name": "colors/green/400",
+            "token": "colors-green-400",
+            "type": "color",
+            "value": "#4ade80"
+          },
+          {
+            "name": "colors/green/500",
+            "token": "colors-green-500",
+            "type": "color",
+            "value": "#22c55e"
+          },
+          {
+            "name": "colors/green/600",
+            "token": "colors-green-600",
+            "type": "color",
+            "value": "#16a34a"
+          },
+          {
+            "name": "colors/green/700",
+            "token": "colors-green-700",
+            "type": "color",
+            "value": "#15803d"
+          },
+          {
+            "name": "colors/green/800",
+            "token": "colors-green-800",
+            "type": "color",
+            "value": "#166534"
+          },
+          {
+            "name": "colors/green/900",
+            "token": "colors-green-900",
+            "type": "color",
+            "value": "#14532d"
+          },
+          {
+            "name": "colors/green/950",
+            "token": "colors-green-950",
+            "type": "color",
+            "value": "#052e16"
+          },
+          {
+            "name": "colors/emerald/50",
+            "token": "colors-emerald-50",
+            "type": "color",
+            "value": "#ecfdf5"
+          },
+          {
+            "name": "colors/emerald/100",
+            "token": "colors-emerald-100",
+            "type": "color",
+            "value": "#d1fae5"
+          },
+          {
+            "name": "colors/emerald/200",
+            "token": "colors-emerald-200",
+            "type": "color",
+            "value": "#a7f3d0"
+          },
+          {
+            "name": "colors/emerald/300",
+            "token": "colors-emerald-300",
+            "type": "color",
+            "value": "#6ee7b7"
+          },
+          {
+            "name": "colors/emerald/400",
+            "token": "colors-emerald-400",
+            "type": "color",
+            "value": "#34d399"
+          },
+          {
+            "name": "colors/emerald/500",
+            "token": "colors-emerald-500",
+            "type": "color",
+            "value": "#10b981"
+          },
+          {
+            "name": "colors/emerald/600",
+            "token": "colors-emerald-600",
+            "type": "color",
+            "value": "#059669"
+          },
+          {
+            "name": "colors/emerald/700",
+            "token": "colors-emerald-700",
+            "type": "color",
+            "value": "#047857"
+          },
+          {
+            "name": "colors/emerald/800",
+            "token": "colors-emerald-800",
+            "type": "color",
+            "value": "#065f46"
+          },
+          {
+            "name": "colors/emerald/900",
+            "token": "colors-emerald-900",
+            "type": "color",
+            "value": "#064e3b"
+          },
+          {
+            "name": "colors/emerald/950",
+            "token": "colors-emerald-950",
+            "type": "color",
+            "value": "#022c22"
+          },
+          {
+            "name": "colors/teal/50",
+            "token": "colors-teal-50",
+            "type": "color",
+            "value": "#f0fdfa"
+          },
+          {
+            "name": "colors/teal/100",
+            "token": "colors-teal-100",
+            "type": "color",
+            "value": "#ccfbf1"
+          },
+          {
+            "name": "colors/teal/200",
+            "token": "colors-teal-200",
+            "type": "color",
+            "value": "#99f6e4"
+          },
+          {
+            "name": "colors/teal/300",
+            "token": "colors-teal-300",
+            "type": "color",
+            "value": "#5eead4"
+          },
+          {
+            "name": "colors/teal/400",
+            "token": "colors-teal-400",
+            "type": "color",
+            "value": "#2dd4bf"
+          },
+          {
+            "name": "colors/teal/500",
+            "token": "colors-teal-500",
+            "type": "color",
+            "value": "#14b8a6"
+          },
+          {
+            "name": "colors/teal/600",
+            "token": "colors-teal-600",
+            "type": "color",
+            "value": "#0d9488"
+          },
+          {
+            "name": "colors/teal/700",
+            "token": "colors-teal-700",
+            "type": "color",
+            "value": "#0f766e"
+          },
+          {
+            "name": "colors/teal/800",
+            "token": "colors-teal-800",
+            "type": "color",
+            "value": "#115e59"
+          },
+          {
+            "name": "colors/teal/900",
+            "token": "colors-teal-900",
+            "type": "color",
+            "value": "#134e4a"
+          },
+          {
+            "name": "colors/teal/950",
+            "token": "colors-teal-950",
+            "type": "color",
+            "value": "#042f2e"
+          },
+          {
+            "name": "colors/cyan/50",
+            "token": "colors-cyan-50",
+            "type": "color",
+            "value": "#ecfeff"
+          },
+          {
+            "name": "colors/cyan/100",
+            "token": "colors-cyan-100",
+            "type": "color",
+            "value": "#cffafe"
+          },
+          {
+            "name": "colors/cyan/200",
+            "token": "colors-cyan-200",
+            "type": "color",
+            "value": "#a5f3fc"
+          },
+          {
+            "name": "colors/cyan/300",
+            "token": "colors-cyan-300",
+            "type": "color",
+            "value": "#67e8f9"
+          },
+          {
+            "name": "colors/cyan/400",
+            "token": "colors-cyan-400",
+            "type": "color",
+            "value": "#22d3ee"
+          },
+          {
+            "name": "colors/cyan/500",
+            "token": "colors-cyan-500",
+            "type": "color",
+            "value": "#06b6d4"
+          },
+          {
+            "name": "colors/cyan/600",
+            "token": "colors-cyan-600",
+            "type": "color",
+            "value": "#0891b2"
+          },
+          {
+            "name": "colors/cyan/700",
+            "token": "colors-cyan-700",
+            "type": "color",
+            "value": "#0e7490"
+          },
+          {
+            "name": "colors/cyan/800",
+            "token": "colors-cyan-800",
+            "type": "color",
+            "value": "#155e75"
+          },
+          {
+            "name": "colors/cyan/900",
+            "token": "colors-cyan-900",
+            "type": "color",
+            "value": "#164e63"
+          },
+          {
+            "name": "colors/cyan/950",
+            "token": "colors-cyan-950",
+            "type": "color",
+            "value": "#083344"
+          },
+          {
+            "name": "colors/sky/50",
+            "token": "colors-sky-50",
+            "type": "color",
+            "value": "#f0f9ff"
+          },
+          {
+            "name": "colors/sky/100",
+            "token": "colors-sky-100",
+            "type": "color",
+            "value": "#e0f2fe"
+          },
+          {
+            "name": "colors/sky/200",
+            "token": "colors-sky-200",
+            "type": "color",
+            "value": "#bae6fd"
+          },
+          {
+            "name": "colors/sky/300",
+            "token": "colors-sky-300",
+            "type": "color",
+            "value": "#7dd3fc"
+          },
+          {
+            "name": "colors/sky/400",
+            "token": "colors-sky-400",
+            "type": "color",
+            "value": "#38bdf8"
+          },
+          {
+            "name": "colors/sky/500",
+            "token": "colors-sky-500",
+            "type": "color",
+            "value": "#0ea5e9"
+          },
+          {
+            "name": "colors/sky/600",
+            "token": "colors-sky-600",
+            "type": "color",
+            "value": "#0284c7"
+          },
+          {
+            "name": "colors/sky/700",
+            "token": "colors-sky-700",
+            "type": "color",
+            "value": "#0369a1"
+          },
+          {
+            "name": "colors/sky/800",
+            "token": "colors-sky-800",
+            "type": "color",
+            "value": "#075985"
+          },
+          {
+            "name": "colors/sky/900",
+            "token": "colors-sky-900",
+            "type": "color",
+            "value": "#0c4a6e"
+          },
+          {
+            "name": "colors/sky/950",
+            "token": "colors-sky-950",
+            "type": "color",
+            "value": "#082f49"
+          },
+          {
+            "name": "colors/blue/50",
+            "token": "colors-blue-50",
+            "type": "color",
+            "value": "#eff6ff"
+          },
+          {
+            "name": "colors/blue/100",
+            "token": "colors-blue-100",
+            "type": "color",
+            "value": "#dbeafe"
+          },
+          {
+            "name": "colors/blue/200",
+            "token": "colors-blue-200",
+            "type": "color",
+            "value": "#bfdbfe"
+          },
+          {
+            "name": "colors/blue/300",
+            "token": "colors-blue-300",
+            "type": "color",
+            "value": "#93c5fd"
+          },
+          {
+            "name": "colors/blue/400",
+            "token": "colors-blue-400",
+            "type": "color",
+            "value": "#60a5fa"
+          },
+          {
+            "name": "colors/blue/500",
+            "token": "colors-blue-500",
+            "type": "color",
+            "value": "#3b82f6"
+          },
+          {
+            "name": "colors/blue/600",
+            "token": "colors-blue-600",
+            "type": "color",
+            "value": "#2563eb"
+          },
+          {
+            "name": "colors/blue/700",
+            "token": "colors-blue-700",
+            "type": "color",
+            "value": "#1d4ed8"
+          },
+          {
+            "name": "colors/blue/800",
+            "token": "colors-blue-800",
+            "type": "color",
+            "value": "#1e40af"
+          },
+          {
+            "name": "colors/blue/900",
+            "token": "colors-blue-900",
+            "type": "color",
+            "value": "#1e3a8a"
+          },
+          {
+            "name": "colors/blue/950",
+            "token": "colors-blue-950",
+            "type": "color",
+            "value": "#172554"
+          },
+          {
+            "name": "colors/indigo/50",
+            "token": "colors-indigo-50",
+            "type": "color",
+            "value": "#eef2ff"
+          },
+          {
+            "name": "colors/indigo/100",
+            "token": "colors-indigo-100",
+            "type": "color",
+            "value": "#e0e7ff"
+          },
+          {
+            "name": "colors/indigo/200",
+            "token": "colors-indigo-200",
+            "type": "color",
+            "value": "#c7d2fe"
+          },
+          {
+            "name": "colors/indigo/300",
+            "token": "colors-indigo-300",
+            "type": "color",
+            "value": "#a5b4fc"
+          },
+          {
+            "name": "colors/indigo/400",
+            "token": "colors-indigo-400",
+            "type": "color",
+            "value": "#818cf8"
+          },
+          {
+            "name": "colors/indigo/500",
+            "token": "colors-indigo-500",
+            "type": "color",
+            "value": "#6366f1"
+          },
+          {
+            "name": "colors/indigo/600",
+            "token": "colors-indigo-600",
+            "type": "color",
+            "value": "#4f46e5"
+          },
+          {
+            "name": "colors/indigo/700",
+            "token": "colors-indigo-700",
+            "type": "color",
+            "value": "#4338ca"
+          },
+          {
+            "name": "colors/indigo/800",
+            "token": "colors-indigo-800",
+            "type": "color",
+            "value": "#3730a3"
+          },
+          {
+            "name": "colors/indigo/900",
+            "token": "colors-indigo-900",
+            "type": "color",
+            "value": "#312e81"
+          },
+          {
+            "name": "colors/indigo/950",
+            "token": "colors-indigo-950",
+            "type": "color",
+            "value": "#1e1b4b"
+          },
+          {
+            "name": "colors/violet/50",
+            "token": "colors-violet-50",
+            "type": "color",
+            "value": "#f5f3ff"
+          },
+          {
+            "name": "colors/violet/100",
+            "token": "colors-violet-100",
+            "type": "color",
+            "value": "#ede9fe"
+          },
+          {
+            "name": "colors/violet/200",
+            "token": "colors-violet-200",
+            "type": "color",
+            "value": "#ddd6fe"
+          },
+          {
+            "name": "colors/violet/300",
+            "token": "colors-violet-300",
+            "type": "color",
+            "value": "#c4b5fd"
+          },
+          {
+            "name": "colors/violet/400",
+            "token": "colors-violet-400",
+            "type": "color",
+            "value": "#a78bfa"
+          },
+          {
+            "name": "colors/violet/500",
+            "token": "colors-violet-500",
+            "type": "color",
+            "value": "#8b5cf6"
+          },
+          {
+            "name": "colors/violet/600",
+            "token": "colors-violet-600",
+            "type": "color",
+            "value": "#7c3aed"
+          },
+          {
+            "name": "colors/violet/700",
+            "token": "colors-violet-700",
+            "type": "color",
+            "value": "#6d28d9"
+          },
+          {
+            "name": "colors/violet/800",
+            "token": "colors-violet-800",
+            "type": "color",
+            "value": "#5b21b6"
+          },
+          {
+            "name": "colors/violet/900",
+            "token": "colors-violet-900",
+            "type": "color",
+            "value": "#4c1d95"
+          },
+          {
+            "name": "colors/violet/950",
+            "token": "colors-violet-950",
+            "type": "color",
+            "value": "#2e1065"
+          },
+          {
+            "name": "colors/purple/50",
+            "token": "colors-purple-50",
+            "type": "color",
+            "value": "#faf5ff"
+          },
+          {
+            "name": "colors/purple/100",
+            "token": "colors-purple-100",
+            "type": "color",
+            "value": "#f3e8ff"
+          },
+          {
+            "name": "colors/purple/200",
+            "token": "colors-purple-200",
+            "type": "color",
+            "value": "#e9d5ff"
+          },
+          {
+            "name": "colors/purple/300",
+            "token": "colors-purple-300",
+            "type": "color",
+            "value": "#d8b4fe"
+          },
+          {
+            "name": "colors/purple/400",
+            "token": "colors-purple-400",
+            "type": "color",
+            "value": "#c084fc"
+          },
+          {
+            "name": "colors/purple/500",
+            "token": "colors-purple-500",
+            "type": "color",
+            "value": "#a855f7"
+          },
+          {
+            "name": "colors/purple/600",
+            "token": "colors-purple-600",
+            "type": "color",
+            "value": "#9333ea"
+          },
+          {
+            "name": "colors/purple/700",
+            "token": "colors-purple-700",
+            "type": "color",
+            "value": "#7e22ce"
+          },
+          {
+            "name": "colors/purple/800",
+            "token": "colors-purple-800",
+            "type": "color",
+            "value": "#6b21a8"
+          },
+          {
+            "name": "colors/purple/900",
+            "token": "colors-purple-900",
+            "type": "color",
+            "value": "#581c87"
+          },
+          {
+            "name": "colors/purple/950",
+            "token": "colors-purple-950",
+            "type": "color",
+            "value": "#3b0764"
+          },
+          {
+            "name": "colors/fuchsia/50",
+            "token": "colors-fuchsia-50",
+            "type": "color",
+            "value": "#fdf4ff"
+          },
+          {
+            "name": "colors/fuchsia/100",
+            "token": "colors-fuchsia-100",
+            "type": "color",
+            "value": "#fae8ff"
+          },
+          {
+            "name": "colors/fuchsia/200",
+            "token": "colors-fuchsia-200",
+            "type": "color",
+            "value": "#f5d0fe"
+          },
+          {
+            "name": "colors/fuchsia/300",
+            "token": "colors-fuchsia-300",
+            "type": "color",
+            "value": "#f0abfc"
+          },
+          {
+            "name": "colors/fuchsia/400",
+            "token": "colors-fuchsia-400",
+            "type": "color",
+            "value": "#e879f9"
+          },
+          {
+            "name": "colors/fuchsia/500",
+            "token": "colors-fuchsia-500",
+            "type": "color",
+            "value": "#d946ef"
+          },
+          {
+            "name": "colors/fuchsia/600",
+            "token": "colors-fuchsia-600",
+            "type": "color",
+            "value": "#c026d3"
+          },
+          {
+            "name": "colors/fuchsia/700",
+            "token": "colors-fuchsia-700",
+            "type": "color",
+            "value": "#a21caf"
+          },
+          {
+            "name": "colors/fuchsia/800",
+            "token": "colors-fuchsia-800",
+            "type": "color",
+            "value": "#86198f"
+          },
+          {
+            "name": "colors/fuchsia/900",
+            "token": "colors-fuchsia-900",
+            "type": "color",
+            "value": "#701a75"
+          },
+          {
+            "name": "colors/fuchsia/950",
+            "token": "colors-fuchsia-950",
+            "type": "color",
+            "value": "#4a044e"
+          },
+          {
+            "name": "colors/pink/50",
+            "token": "colors-pink-50",
+            "type": "color",
+            "value": "#fdf2f8"
+          },
+          {
+            "name": "colors/pink/100",
+            "token": "colors-pink-100",
+            "type": "color",
+            "value": "#fce7f3"
+          },
+          {
+            "name": "colors/pink/200",
+            "token": "colors-pink-200",
+            "type": "color",
+            "value": "#fbcfe8"
+          },
+          {
+            "name": "colors/pink/300",
+            "token": "colors-pink-300",
+            "type": "color",
+            "value": "#f9a8d4"
+          },
+          {
+            "name": "colors/pink/400",
+            "token": "colors-pink-400",
+            "type": "color",
+            "value": "#f472b6"
+          },
+          {
+            "name": "colors/pink/500",
+            "token": "colors-pink-500",
+            "type": "color",
+            "value": "#ec4899"
+          },
+          {
+            "name": "colors/pink/600",
+            "token": "colors-pink-600",
+            "type": "color",
+            "value": "#db2777"
+          },
+          {
+            "name": "colors/pink/700",
+            "token": "colors-pink-700",
+            "type": "color",
+            "value": "#be185d"
+          },
+          {
+            "name": "colors/pink/800",
+            "token": "colors-pink-800",
+            "type": "color",
+            "value": "#9d174d"
+          },
+          {
+            "name": "colors/pink/900",
+            "token": "colors-pink-900",
+            "type": "color",
+            "value": "#831843"
+          },
+          {
+            "name": "colors/pink/950",
+            "token": "colors-pink-950",
+            "type": "color",
+            "value": "#500724"
+          },
+          {
+            "name": "colors/rose/50",
+            "token": "colors-rose-50",
+            "type": "color",
+            "value": "#fff1f2"
+          },
+          {
+            "name": "colors/rose/100",
+            "token": "colors-rose-100",
+            "type": "color",
+            "value": "#ffe4e6"
+          },
+          {
+            "name": "colors/rose/200",
+            "token": "colors-rose-200",
+            "type": "color",
+            "value": "#fecdd3"
+          },
+          {
+            "name": "colors/rose/300",
+            "token": "colors-rose-300",
+            "type": "color",
+            "value": "#fda4af"
+          },
+          {
+            "name": "colors/rose/400",
+            "token": "colors-rose-400",
+            "type": "color",
+            "value": "#fb7185"
+          },
+          {
+            "name": "colors/rose/500",
+            "token": "colors-rose-500",
+            "type": "color",
+            "value": "#f43f5e"
+          },
+          {
+            "name": "colors/rose/600",
+            "token": "colors-rose-600",
+            "type": "color",
+            "value": "#e11d48"
+          },
+          {
+            "name": "colors/rose/700",
+            "token": "colors-rose-700",
+            "type": "color",
+            "value": "#be123c"
+          },
+          {
+            "name": "colors/rose/800",
+            "token": "colors-rose-800",
+            "type": "color",
+            "value": "#9f1239"
+          },
+          {
+            "name": "colors/rose/900",
+            "token": "colors-rose-900",
+            "type": "color",
+            "value": "#881337"
+          },
+          {
+            "name": "colors/rose/950",
+            "token": "colors-rose-950",
+            "type": "color",
+            "value": "#4c0519"
+          },
+          {
+            "name": "colors/white",
+            "token": "colors-white",
+            "type": "color",
+            "value": "#ffffff"
+          },
+          {
+            "name": "colors/black",
+            "token": "colors-black",
+            "type": "color",
+            "value": "#000000"
+          },
+          {
+            "name": "colors/eclipse",
+            "token": "colors-eclipse",
+            "type": "color",
+            "value": "#18181b"
+          },
+          {
+            "name": "colors/jade/50",
+            "token": "colors-jade-50",
+            "type": "color",
+            "value": "#f2fdf6"
+          },
+          {
+            "name": "colors/jade/100",
+            "token": "colors-jade-100",
+            "type": "color",
+            "value": "#cbf6db"
+          },
+          {
+            "name": "colors/jade/200",
+            "token": "colors-jade-200",
+            "type": "color",
+            "value": "#a5eec1"
+          },
+          {
+            "name": "colors/jade/300",
+            "token": "colors-jade-300",
+            "type": "color",
+            "value": "#81e4a7"
+          },
+          {
+            "name": "colors/jade/400",
+            "token": "colors-jade-400",
+            "type": "color",
+            "value": "#5dda8e"
+          },
+          {
+            "name": "colors/jade/500",
+            "token": "colors-jade-500",
+            "type": "color",
+            "value": "#3bce76"
+          },
+          {
+            "name": "colors/jade/600",
+            "token": "colors-jade-600",
+            "type": "color",
+            "value": "#2ead62"
+          },
+          {
+            "name": "colors/jade/700",
+            "token": "colors-jade-700",
+            "type": "color",
+            "value": "#26874f"
+          },
+          {
+            "name": "colors/jade/800",
+            "token": "colors-jade-800",
+            "type": "color",
+            "value": "#1d623b"
+          },
+          {
+            "name": "colors/jade/900",
+            "token": "colors-jade-900",
+            "type": "color",
+            "value": "#143e26"
+          },
+          {
+            "name": "colors/jade/950",
+            "token": "colors-jade-950",
+            "type": "color",
+            "value": "#091b11"
+          },
+          {
+            "name": "colors/coral/50",
+            "token": "colors-coral-50",
+            "type": "color",
+            "value": "#fffdfa"
+          },
+          {
+            "name": "colors/coral/100",
+            "token": "colors-coral-100",
+            "type": "color",
+            "value": "#ffedd1"
+          },
+          {
+            "name": "colors/coral/200",
+            "token": "colors-coral-200",
+            "type": "color",
+            "value": "#ffdda8"
+          },
+          {
+            "name": "colors/coral/300",
+            "token": "colors-coral-300",
+            "type": "color",
+            "value": "#ffce7e"
+          },
+          {
+            "name": "colors/coral/400",
+            "token": "colors-coral-400",
+            "type": "color",
+            "value": "#ffc055"
+          },
+          {
+            "name": "colors/coral/500",
+            "token": "colors-coral-500",
+            "type": "color",
+            "value": "#ffb22c"
+          },
+          {
+            "name": "colors/coral/600",
+            "token": "colors-coral-600",
+            "type": "color",
+            "value": "#faa203"
+          },
+          {
+            "name": "colors/coral/700",
+            "token": "colors-coral-700",
+            "type": "color",
+            "value": "#cb8605"
+          },
+          {
+            "name": "colors/coral/800",
+            "token": "colors-coral-800",
+            "type": "color",
+            "value": "#9c6906"
+          },
+          {
+            "name": "colors/coral/900",
+            "token": "colors-coral-900",
+            "type": "color",
+            "value": "#6f4c05"
+          },
+          {
+            "name": "colors/coral/950",
+            "token": "colors-coral-950",
+            "type": "color",
+            "value": "#422e04"
+          },
+          {
+            "name": "colors/ruby/50",
+            "token": "colors-ruby-50",
+            "type": "color",
+            "value": "#fffafa"
+          },
+          {
+            "name": "colors/ruby/100",
+            "token": "colors-ruby-100",
+            "type": "color",
+            "value": "#fed1d0"
+          },
+          {
+            "name": "colors/ruby/200",
+            "token": "colors-ruby-200",
+            "type": "color",
+            "value": "#fcaba8"
+          },
+          {
+            "name": "colors/ruby/300",
+            "token": "colors-ruby-300",
+            "type": "color",
+            "value": "#f98681"
+          },
+          {
+            "name": "colors/ruby/400",
+            "token": "colors-ruby-400",
+            "type": "color",
+            "value": "#f5645b"
+          },
+          {
+            "name": "colors/ruby/500",
+            "token": "colors-ruby-500",
+            "type": "color",
+            "value": "#ef4437"
+          },
+          {
+            "name": "colors/ruby/600",
+            "token": "colors-ruby-600",
+            "type": "color",
+            "value": "#e32616"
+          },
+          {
+            "name": "colors/ruby/700",
+            "token": "colors-ruby-700",
+            "type": "color",
+            "value": "#b62214"
+          },
+          {
+            "name": "colors/ruby/800",
+            "token": "colors-ruby-800",
+            "type": "color",
+            "value": "#8b1d12"
+          },
+          {
+            "name": "colors/ruby/900",
+            "token": "colors-ruby-900",
+            "type": "color",
+            "value": "#61160e"
+          },
+          {
+            "name": "colors/ruby/950",
+            "token": "colors-ruby-950",
+            "type": "color",
+            "value": "#380e09"
+          },
+          {
+            "name": "colors/snow",
+            "token": "colors-snow",
+            "type": "color",
+            "value": "#fcfcfc"
+          }
+        ],
+        "numbers": [
+          {
+            "name": "dimensions/radius/rounded-xl",
+            "token": "dimensions-radius-rounded-xl",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "dimensions/radius/rounded-lg",
+            "token": "dimensions-radius-rounded-lg",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "dimensions/screens/lg",
+            "token": "dimensions-screens-lg",
+            "type": "float",
+            "value": 1024,
+            "description": "=> @media (min-width: 1024px) { ... }"
+          },
+          {
+            "name": "dimensions/spacing/44",
+            "token": "dimensions-spacing-44",
+            "type": "float",
+            "value": 176
+          },
+          {
+            "name": "dimensions/screens/md",
+            "token": "dimensions-screens-md",
+            "type": "float",
+            "value": 768,
+            "description": "@media (min-width: 768px) { ... }"
+          },
+          {
+            "name": "dimensions/radius/rounded-3xl",
+            "token": "dimensions-radius-rounded-3xl",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "dimensions/spacing/9",
+            "token": "dimensions-spacing-9",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "dimensions/spacing/96",
+            "token": "dimensions-spacing-96",
+            "type": "float",
+            "value": 384
+          },
+          {
+            "name": "dimensions/spacing/80",
+            "token": "dimensions-spacing-80",
+            "type": "float",
+            "value": 320
+          },
+          {
+            "name": "dimensions/spacing/56",
+            "token": "dimensions-spacing-56",
+            "type": "float",
+            "value": 224
+          },
+          {
+            "name": "dimensions/spacing/36",
+            "token": "dimensions-spacing-36",
+            "type": "float",
+            "value": 144
+          },
+          {
+            "name": "dimensions/spacing/52",
+            "token": "dimensions-spacing-52",
+            "type": "float",
+            "value": 208
+          },
+          {
+            "name": "dimensions/radius/rounded-none",
+            "token": "dimensions-radius-rounded-none",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "dimensions/spacing/60",
+            "token": "dimensions-spacing-60",
+            "type": "float",
+            "value": 240
+          },
+          {
+            "name": "dimensions/spacing/1",
+            "token": "dimensions-spacing-1",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "dimensions/spacing/48",
+            "token": "dimensions-spacing-48",
+            "type": "float",
+            "value": 192
+          },
+          {
+            "name": "dimensions/spacing/40",
+            "token": "dimensions-spacing-40",
+            "type": "float",
+            "value": 160
+          },
+          {
+            "name": "dimensions/spacing/28",
+            "token": "dimensions-spacing-28",
+            "type": "float",
+            "value": 112
+          },
+          {
+            "name": "dimensions/radius/rounded-md",
+            "token": "dimensions-radius-rounded-md",
+            "type": "float",
+            "value": 6
+          },
+          {
+            "name": "dimensions/spacing/24",
+            "token": "dimensions-spacing-24",
+            "type": "float",
+            "value": 96
+          },
+          {
+            "name": "dimensions/spacing/64",
+            "token": "dimensions-spacing-64",
+            "type": "float",
+            "value": 256
+          },
+          {
+            "name": "dimensions/spacing/20",
+            "token": "dimensions-spacing-20",
+            "type": "float",
+            "value": 80
+          },
+          {
+            "name": "dimensions/spacing/16",
+            "token": "dimensions-spacing-16",
+            "type": "float",
+            "value": 64
+          },
+          {
+            "name": "dimensions/radius/rounded-sm",
+            "token": "dimensions-radius-rounded-sm",
+            "type": "float",
+            "value": 4
+          },
+          {
+            "name": "dimensions/spacing/72",
+            "token": "dimensions-spacing-72",
+            "type": "float",
+            "value": 288
+          },
+          {
+            "name": "dimensions/screens/2xl",
+            "token": "dimensions-screens-2xl",
+            "type": "float",
+            "value": 1536,
+            "description": "=> @media (min-width: 1536px) { ... }"
+          },
+          {
+            "name": "dimensions/spacing/2",
+            "token": "dimensions-spacing-2",
+            "type": "float",
+            "value": 8
+          },
+          {
+            "name": "dimensions/spacing/px",
+            "token": "dimensions-spacing-px",
+            "type": "float",
+            "value": 1
+          },
+          {
+            "name": "dimensions/spacing/10",
+            "token": "dimensions-spacing-10",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "dimensions/radius/rounded-full",
+            "token": "dimensions-radius-rounded-full",
+            "type": "float",
+            "value": 9999
+          },
+          {
+            "name": "dimensions/spacing/11",
+            "token": "dimensions-spacing-11",
+            "type": "float",
+            "value": 44
+          },
+          {
+            "name": "dimensions/screens/xl",
+            "token": "dimensions-screens-xl",
+            "type": "float",
+            "value": 1280,
+            "description": "=> @media (min-width: 1280px) { ... }"
+          },
+          {
+            "name": "dimensions/spacing/2․5",
+            "token": "dimensions-spacing-2-5",
+            "type": "float",
+            "value": 10
+          },
+          {
+            "name": "dimensions/spacing/6",
+            "token": "dimensions-spacing-6",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "dimensions/spacing/8",
+            "token": "dimensions-spacing-8",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "dimensions/spacing/5",
+            "token": "dimensions-spacing-5",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "dimensions/spacing/3․5",
+            "token": "dimensions-spacing-3-5",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "dimensions/radius/rounded-xs",
+            "token": "dimensions-radius-rounded-xs",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "dimensions/spacing/4",
+            "token": "dimensions-spacing-4",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "dimensions/radius/rounded-2xl",
+            "token": "dimensions-radius-rounded-2xl",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "dimensions/spacing/3",
+            "token": "dimensions-spacing-3",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "dimensions/spacing/1․5",
+            "token": "dimensions-spacing-1-5",
+            "type": "float",
+            "value": 6
+          },
+          {
+            "name": "dimensions/screens/sm",
+            "token": "dimensions-screens-sm",
+            "type": "float",
+            "value": 640,
+            "description": "=> @media (min-width: 640px) { ... }"
+          },
+          {
+            "name": "dimensions/spacing/14",
+            "token": "dimensions-spacing-14",
+            "type": "float",
+            "value": 56
+          },
+          {
+            "name": "dimensions/spacing/32",
+            "token": "dimensions-spacing-32",
+            "type": "float",
+            "value": 128
+          },
+          {
+            "name": "dimensions/spacing/0․5",
+            "token": "dimensions-spacing-0-5",
+            "type": "float",
+            "value": 2
+          },
+          {
+            "name": "dimensions/spacing/12",
+            "token": "dimensions-spacing-12",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "dimensions/spacing/0",
+            "token": "dimensions-spacing-0",
+            "type": "float",
+            "value": 0
+          },
+          {
+            "name": "dimensions/spacing/7",
+            "token": "dimensions-spacing-7",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "dimensions/radius/rounded-4xl",
+            "token": "dimensions-radius-rounded-4xl",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "dimensions/radius/rounded-2_5xl",
+            "token": "dimensions-radius-rounded-2-5xl",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "dimensions/font/text-xs",
+            "token": "dimensions-font-text-xs",
+            "type": "float",
+            "value": 12
+          },
+          {
+            "name": "dimensions/font/text-sm",
+            "token": "dimensions-font-text-sm",
+            "type": "float",
+            "value": 14
+          },
+          {
+            "name": "dimensions/font/text-base",
+            "token": "dimensions-font-text-base",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "dimensions/font/text-lg",
+            "token": "dimensions-font-text-lg",
+            "type": "float",
+            "value": 18
+          },
+          {
+            "name": "dimensions/font/text-xl",
+            "token": "dimensions-font-text-xl",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "dimensions/font/text-2xl",
+            "token": "dimensions-font-text-2xl",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "dimensions/font/text-3xl",
+            "token": "dimensions-font-text-3xl",
+            "type": "float",
+            "value": 30
+          },
+          {
+            "name": "dimensions/font/text-4xl",
+            "token": "dimensions-font-text-4xl",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "dimensions/font/text-5xl",
+            "token": "dimensions-font-text-5xl",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "dimensions/font/text-6xl",
+            "token": "dimensions-font-text-6xl",
+            "type": "float",
+            "value": 60
+          },
+          {
+            "name": "dimensions/font/text-7xl",
+            "token": "dimensions-font-text-7xl",
+            "type": "float",
+            "value": 72
+          },
+          {
+            "name": "dimensions/font/text-8xl",
+            "token": "dimensions-font-text-8xl",
+            "type": "float",
+            "value": 96
+          },
+          {
+            "name": "dimensions/font/text-9xl",
+            "token": "dimensions-font-text-9xl",
+            "type": "float",
+            "value": 128
+          },
+          {
+            "name": "dimensions/leading/text-xs",
+            "token": "dimensions-leading-text-xs",
+            "type": "float",
+            "value": 16
+          },
+          {
+            "name": "dimensions/leading/text-sm",
+            "token": "dimensions-leading-text-sm",
+            "type": "float",
+            "value": 20
+          },
+          {
+            "name": "dimensions/leading/text-base",
+            "token": "dimensions-leading-text-base",
+            "type": "float",
+            "value": 24
+          },
+          {
+            "name": "dimensions/leading/text-lg",
+            "token": "dimensions-leading-text-lg",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "dimensions/leading/text-xl",
+            "token": "dimensions-leading-text-xl",
+            "type": "float",
+            "value": 28
+          },
+          {
+            "name": "dimensions/leading/text-2xl",
+            "token": "dimensions-leading-text-2xl",
+            "type": "float",
+            "value": 32
+          },
+          {
+            "name": "dimensions/leading/text-3xl",
+            "token": "dimensions-leading-text-3xl",
+            "type": "float",
+            "value": 36
+          },
+          {
+            "name": "dimensions/leading/text-4xl",
+            "token": "dimensions-leading-text-4xl",
+            "type": "float",
+            "value": 40
+          },
+          {
+            "name": "dimensions/leading/text-5xl",
+            "token": "dimensions-leading-text-5xl",
+            "type": "float",
+            "value": 48
+          },
+          {
+            "name": "dimensions/leading/text-6xl",
+            "token": "dimensions-leading-text-6xl",
+            "type": "float",
+            "value": 60
+          },
+          {
+            "name": "dimensions/leading/text-7xl",
+            "token": "dimensions-leading-text-7xl",
+            "type": "float",
+            "value": 72
+          },
+          {
+            "name": "dimensions/leading/text-8xl",
+            "token": "dimensions-leading-text-8xl",
+            "type": "float",
+            "value": 96
+          },
+          {
+            "name": "dimensions/leading/text-9xl",
+            "token": "dimensions-leading-text-9xl",
+            "type": "float",
+            "value": 128
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "02_Theme (HeroUI)": {
+      "id": "VariableCollectionId:2103:650",
+      "modes": [
+        {
+          "id": "2103:0",
+          "name": "Light"
+        },
+        {
+          "id": "2103:2",
+          "name": "Dark"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "accent/accent-foreground",
+            "token": "accent-accent-foreground",
+            "type": "color",
+            "value": "#fcfcfc",
+            "values": {
+              "Light": "#fcfcfc",
+              "Dark": "#00173b"
+            }
+          },
+          {
+            "name": "background/background",
+            "token": "background-background",
+            "type": "color",
+            "value": "#f5f5f5",
+            "values": {
+              "Light": "#f5f5f5",
+              "Dark": "#000e22"
+            }
+          },
+          {
+            "name": "background/background-inverse",
+            "token": "background-background-inverse",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "foreground/foreground",
+            "token": "foreground-foreground",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "foreground/muted",
+            "token": "foreground-muted",
+            "type": "color",
+            "value": "#71717a",
+            "values": {
+              "Light": "#71717a",
+              "Dark": "#94a3b8"
+            }
+          },
+          {
+            "name": "surface/surface",
+            "token": "surface-surface",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#00173b"
+            }
+          },
+          {
+            "name": "backdrop",
+            "token": "backdrop",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.5)",
+            "values": {
+              "Light": "rgba(0, 0, 0, 0.5)",
+              "Dark": "rgba(0, 0, 0, 0.5)"
+            }
+          },
+          {
+            "name": "surface/surface-secondary",
+            "token": "surface-surface-secondary",
+            "type": "color",
+            "value": "#efeff0",
+            "values": {
+              "Light": "#efeff0",
+              "Dark": "#062249"
+            }
+          },
+          {
+            "name": "surface/surface-tertiary",
+            "token": "surface-surface-tertiary",
+            "type": "color",
+            "value": "#eaeaeb",
+            "values": {
+              "Light": "#eaeaeb",
+              "Dark": "#24436f"
+            }
+          },
+          {
+            "name": "separator/separator",
+            "token": "separator-separator",
+            "type": "color",
+            "value": "#e4e4e7",
+            "values": {
+              "Light": "#e4e4e7",
+              "Dark": "#31445f"
+            }
+          },
+          {
+            "name": "accent/accent",
+            "token": "accent-accent",
+            "type": "color",
+            "value": "#0485f7",
+            "values": {
+              "Light": "#0485f7",
+              "Dark": "#00d9a5"
+            }
+          },
+          {
+            "name": "accent/accent-hover",
+            "token": "accent-accent-hover",
+            "type": "color",
+            "value": "#3592f9",
+            "values": {
+              "Light": "#3592f9",
+              "Dark": "#00a191"
+            }
+          },
+          {
+            "name": "accent/accent-soft",
+            "token": "accent-accent-soft",
+            "type": "color",
+            "value": "rgba(4, 133, 247, 0.15)",
+            "values": {
+              "Light": "rgba(4, 133, 247, 0.15)",
+              "Dark": "rgba(0, 217, 165, 0.12)"
+            }
+          },
+          {
+            "name": "accent/accent-soft-foreground",
+            "token": "accent-accent-soft-foreground",
+            "type": "color",
+            "value": "#1d63ae",
+            "values": {
+              "Light": "#1d63ae",
+              "Dark": "#00d9a5"
+            }
+          },
+          {
+            "name": "accent/accent-soft-hover",
+            "token": "accent-accent-soft-hover",
+            "type": "color",
+            "value": "rgba(4, 133, 247, 0.2)",
+            "values": {
+              "Light": "rgba(4, 133, 247, 0.2)",
+              "Dark": "rgba(0, 217, 165, 0.16)"
+            }
+          },
+          {
+            "name": "border",
+            "token": "border",
+            "type": "color",
+            "value": "#dedee0",
+            "values": {
+              "Light": "#dedee0",
+              "Dark": "#31445f"
+            }
+          },
+          {
+            "name": "default/default-foreground",
+            "token": "default-default-foreground",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#00d9a5"
+            }
+          },
+          {
+            "name": "default/default-hover",
+            "token": "default-default-hover",
+            "type": "color",
+            "value": "#e1e1e2",
+            "values": {
+              "Light": "#e1e1e2",
+              "Dark": "#1b3865"
+            }
+          },
+          {
+            "name": "default/default",
+            "token": "default-default",
+            "type": "color",
+            "value": "#ebebec",
+            "values": {
+              "Light": "#ebebec",
+              "Dark": "#1b3865"
+            }
+          },
+          {
+            "name": "success/success-hover",
+            "token": "success-success-hover",
+            "type": "color",
+            "value": "#21b55d",
+            "values": {
+              "Light": "#21b55d",
+              "Dark": "#21b55d"
+            }
+          },
+          {
+            "name": "success/success",
+            "token": "success-success",
+            "type": "color",
+            "value": "#17c964",
+            "values": {
+              "Light": "#17c964",
+              "Dark": "#17c964"
+            }
+          },
+          {
+            "name": "success/success-foreground",
+            "token": "success-success-foreground",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#18181b"
+            }
+          },
+          {
+            "name": "warning/warning-foreground",
+            "token": "warning-warning-foreground",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#18181b"
+            }
+          },
+          {
+            "name": "warning/warning-hover",
+            "token": "warning-warning-hover",
+            "type": "color",
+            "value": "#dc952a",
+            "values": {
+              "Light": "#dc952a",
+              "Dark": "#dea54c"
+            }
+          },
+          {
+            "name": "warning/warning",
+            "token": "warning-warning",
+            "type": "color",
+            "value": "#f5a524",
+            "values": {
+              "Light": "#f5a524",
+              "Dark": "#f7b750"
+            }
+          },
+          {
+            "name": "danger/danger-foreground",
+            "token": "danger-danger-foreground",
+            "type": "color",
+            "value": "#fcfcfc",
+            "values": {
+              "Light": "#fcfcfc",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "danger/danger-hover",
+            "token": "danger-danger-hover",
+            "type": "color",
+            "value": "#ff5551",
+            "values": {
+              "Light": "#ff5551",
+              "Dark": "#e15451"
+            }
+          },
+          {
+            "name": "danger/danger",
+            "token": "danger-danger",
+            "type": "color",
+            "value": "#ff383c",
+            "values": {
+              "Light": "#ff383c",
+              "Dark": "#db3b3e"
+            }
+          },
+          {
+            "name": "focus-ring",
+            "token": "focus-ring",
+            "type": "color",
+            "value": "#0485f7",
+            "values": {
+              "Light": "#0485f7",
+              "Dark": "#00d9a5"
+            }
+          },
+          {
+            "name": "background/background-secondary",
+            "token": "background-background-secondary",
+            "type": "color",
+            "value": "#ebebeb",
+            "values": {
+              "Light": "#ebebeb",
+              "Dark": "#0c0c0e"
+            }
+          },
+          {
+            "name": "background/background-tertiary",
+            "token": "background-background-tertiary",
+            "type": "color",
+            "value": "#e1e1e1",
+            "values": {
+              "Light": "#e1e1e1",
+              "Dark": "#131316"
+            }
+          },
+          {
+            "name": "shadow-inner",
+            "token": "shadow-inner",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.3)",
+            "values": {
+              "Light": "rgba(0, 0, 0, 0.3)",
+              "Dark": "rgba(255, 255, 255, 0.3)"
+            }
+          },
+          {
+            "name": "surface/transparent",
+            "token": "surface-transparent",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0)",
+            "values": {
+              "Light": "rgba(255, 255, 255, 0)",
+              "Dark": "rgba(0, 0, 0, 0)"
+            }
+          },
+          {
+            "name": "shadow-scroll",
+            "token": "shadow-scroll",
+            "type": "color",
+            "value": "#f5f5f5",
+            "values": {
+              "Light": "#f5f5f5",
+              "Dark": "#000e22"
+            }
+          },
+          {
+            "name": "shadow-scroll-blur",
+            "token": "shadow-scroll-blur",
+            "type": "color",
+            "value": "rgba(245, 245, 245, 0.7)",
+            "values": {
+              "Light": "rgba(245, 245, 245, 0.7)",
+              "Dark": "rgba(6, 6, 7, 0.7)"
+            }
+          },
+          {
+            "name": "segment",
+            "token": "segment",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#00173b"
+            }
+          },
+          {
+            "name": "foreground/segment",
+            "token": "foreground-segment",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "field/background",
+            "token": "field-background",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#062249"
+            }
+          },
+          {
+            "name": "field/background-hover",
+            "token": "field-background-hover",
+            "type": "color",
+            "value": "rgba(249, 249, 249, 0.92)",
+            "values": {
+              "Light": "rgba(249, 249, 249, 0.92)",
+              "Dark": "rgba(28, 28, 31, 0.92)"
+            }
+          },
+          {
+            "name": "field/background-focus",
+            "token": "field-background-focus",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#000e22"
+            }
+          },
+          {
+            "name": "field/border",
+            "token": "field-border",
+            "type": "color",
+            "value": "rgba(222, 222, 224, 0)",
+            "values": {
+              "Light": "rgba(222, 222, 224, 0)",
+              "Dark": "rgba(40, 40, 44, 0)"
+            }
+          },
+          {
+            "name": "field/border-hover",
+            "token": "field-border-hover",
+            "type": "color",
+            "value": "rgba(193, 193, 193, 0)",
+            "values": {
+              "Light": "rgba(193, 193, 193, 0)",
+              "Dark": "rgba(70, 70, 70, 0)"
+            }
+          },
+          {
+            "name": "field/shadow",
+            "token": "field-shadow",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.04)",
+            "values": {
+              "Light": "rgba(0, 0, 0, 0.04)",
+              "Dark": "rgba(255, 255, 255, 0)"
+            }
+          },
+          {
+            "name": "success/success-soft",
+            "token": "success-success-soft",
+            "type": "color",
+            "value": "rgba(23, 201, 100, 0.15)",
+            "values": {
+              "Light": "rgba(23, 201, 100, 0.15)",
+              "Dark": "rgba(23, 201, 100, 0.12)"
+            }
+          },
+          {
+            "name": "success/success-soft-hover",
+            "token": "success-success-soft-hover",
+            "type": "color",
+            "value": "rgba(23, 201, 100, 0.2)",
+            "values": {
+              "Light": "rgba(23, 201, 100, 0.2)",
+              "Dark": "rgba(23, 201, 100, 0.16)"
+            }
+          },
+          {
+            "name": "success/success-soft-foreground",
+            "token": "success-success-soft-foreground",
+            "type": "color",
+            "value": "#2b7744",
+            "values": {
+              "Light": "#2b7744",
+              "Dark": "#74d88f"
+            }
+          },
+          {
+            "name": "warning/warning-soft",
+            "token": "warning-warning-soft",
+            "type": "color",
+            "value": "rgba(245, 165, 36, 0.15)",
+            "values": {
+              "Light": "rgba(245, 165, 36, 0.15)",
+              "Dark": "rgba(247, 183, 80, 0.12)"
+            }
+          },
+          {
+            "name": "warning/warning-soft-hover",
+            "token": "warning-warning-soft-hover",
+            "type": "color",
+            "value": "rgba(220, 149, 42, 0.2)",
+            "values": {
+              "Light": "rgba(220, 149, 42, 0.2)",
+              "Dark": "rgba(222, 165, 76, 0.16)"
+            }
+          },
+          {
+            "name": "warning/warning-soft-foreground",
+            "token": "warning-warning-soft-foreground",
+            "type": "color",
+            "value": "#855f2c",
+            "values": {
+              "Light": "#855f2c",
+              "Dark": "#f9cb87"
+            }
+          },
+          {
+            "name": "danger/danger-soft",
+            "token": "danger-danger-soft",
+            "type": "color",
+            "value": "rgba(255, 56, 60, 0.15)",
+            "values": {
+              "Light": "rgba(255, 56, 60, 0.15)",
+              "Dark": "rgba(219, 59, 62, 0.15)"
+            }
+          },
+          {
+            "name": "danger/danger-soft-hover",
+            "token": "danger-danger-soft-hover",
+            "type": "color",
+            "value": "rgba(255, 85, 81, 0.2)",
+            "values": {
+              "Light": "rgba(255, 85, 81, 0.2)",
+              "Dark": "rgba(225, 84, 81, 0.2)"
+            }
+          },
+          {
+            "name": "danger/danger-soft-foreground",
+            "token": "danger-danger-soft-foreground",
+            "type": "color",
+            "value": "#a43532",
+            "values": {
+              "Light": "#a43532",
+              "Dark": "#eb7872"
+            }
+          },
+          {
+            "name": "overlay",
+            "token": "overlay",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#00173b"
+            }
+          },
+          {
+            "name": "foreground/overlay",
+            "token": "foreground-overlay",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "field/shadow-2",
+            "token": "field-shadow-2",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0.06)",
+            "values": {
+              "Light": "rgba(0, 0, 0, 0.06)",
+              "Dark": "rgba(255, 255, 255, 0)"
+            }
+          },
+          {
+            "name": "shadow-scroll-on-surface",
+            "token": "shadow-scroll-on-surface",
+            "type": "color",
+            "value": "#ffffff",
+            "values": {
+              "Light": "#ffffff",
+              "Dark": "#00173b"
+            }
+          },
+          {
+            "name": "shadow-scroll-blur-on-surface",
+            "token": "shadow-scroll-blur-on-surface",
+            "type": "color",
+            "value": "rgba(255, 255, 255, 0.7)",
+            "values": {
+              "Light": "rgba(255, 255, 255, 0.7)",
+              "Dark": "rgba(24, 24, 27, 0.7)"
+            }
+          },
+          {
+            "name": "separator/separator-secondary",
+            "token": "separator-separator-secondary",
+            "type": "color",
+            "value": "#d7d7d7",
+            "values": {
+              "Light": "#d7d7d7",
+              "Dark": "#94a3b8"
+            }
+          },
+          {
+            "name": "overlay-shadow",
+            "token": "overlay-shadow",
+            "type": "color",
+            "value": "rgba(0, 0, 0, 0)",
+            "values": {
+              "Light": "rgba(0, 0, 0, 0)",
+              "Dark": "rgba(255, 255, 255, 0.3)"
+            }
+          },
+          {
+            "name": "separator/separator-tertiary",
+            "token": "separator-separator-tertiary",
+            "type": "color",
+            "value": "#cdcdce",
+            "values": {
+              "Light": "#cdcdce",
+              "Dark": "#00d9a5"
+            }
+          },
+          {
+            "name": "charts/chart-1",
+            "token": "charts-chart-1",
+            "type": "color",
+            "value": "#0038a5",
+            "values": {
+              "Light": "#0038a5",
+              "Dark": "#0038a5"
+            }
+          },
+          {
+            "name": "charts/chart-2",
+            "token": "charts-chart-2",
+            "type": "color",
+            "value": "#005fce",
+            "values": {
+              "Light": "#005fce",
+              "Dark": "#005fce"
+            }
+          },
+          {
+            "name": "charts/chart-3",
+            "token": "charts-chart-3",
+            "type": "color",
+            "value": "#0485f7",
+            "values": {
+              "Light": "#0485f7",
+              "Dark": "#0485f7"
+            }
+          },
+          {
+            "name": "charts/chart-4",
+            "token": "charts-chart-4",
+            "type": "color",
+            "value": "#42acff",
+            "values": {
+              "Light": "#42acff",
+              "Dark": "#42acff"
+            }
+          },
+          {
+            "name": "charts/chart-5",
+            "token": "charts-chart-5",
+            "type": "color",
+            "value": "#6cd4ff",
+            "values": {
+              "Light": "#6cd4ff",
+              "Dark": "#6cd4ff"
+            }
+          },
+          {
+            "name": "default/default-soft",
+            "token": "default-default-soft",
+            "type": "color",
+            "value": "rgba(235, 235, 236, 0.5)",
+            "values": {
+              "Light": "rgba(235, 235, 236, 0.5)",
+              "Dark": "rgba(39, 39, 42, 0.5)"
+            }
+          },
+          {
+            "name": "default/default-soft-hover",
+            "token": "default-default-soft-hover",
+            "type": "color",
+            "value": "rgba(235, 235, 236, 0.6)",
+            "values": {
+              "Light": "rgba(235, 235, 236, 0.6)",
+              "Dark": "rgba(27, 56, 101, 0.6)"
+            }
+          },
+          {
+            "name": "default/default-soft-foreground",
+            "token": "default-default-soft-foreground",
+            "type": "color",
+            "value": "#00d9a5",
+            "values": {
+              "Dark": "#00d9a5"
+            }
+          }
+        ],
+        "numbers": [
+          {
+            "name": "disabled-opacity",
+            "token": "disabled-opacity",
+            "type": "float",
+            "value": 50,
+            "values": {
+              "Light": 50,
+              "Dark": 50
+            }
+          },
+          {
+            "name": "border-width",
+            "token": "border-width",
+            "type": "float",
+            "value": 1,
+            "values": {
+              "Light": 1,
+              "Dark": 1
+            }
+          },
+          {
+            "name": "blur",
+            "token": "blur",
+            "type": "float",
+            "value": 0,
+            "values": {
+              "Light": 0,
+              "Dark": 0
+            }
+          },
+          {
+            "name": "depth",
+            "token": "depth",
+            "type": "float",
+            "value": 0,
+            "values": {
+              "Light": 0,
+              "Dark": 0
+            }
+          },
+          {
+            "name": "ring-offset-width",
+            "token": "ring-offset-width",
+            "type": "float",
+            "value": 2,
+            "values": {
+              "Light": 2,
+              "Dark": 2
+            }
+          },
+          {
+            "name": "ring-focus-width",
+            "token": "ring-focus-width",
+            "type": "float",
+            "value": 4,
+            "values": {
+              "Light": 4,
+              "Dark": 4
+            }
+          },
+          {
+            "name": "field/radius",
+            "token": "field-radius",
+            "type": "float",
+            "value": 12,
+            "values": {
+              "Light": 12,
+              "Dark": 12
+            }
+          },
+          {
+            "name": "field/border-width",
+            "token": "field-border-width",
+            "type": "float",
+            "value": 1,
+            "values": {
+              "Light": 1,
+              "Dark": 1
+            },
+            "description": "Used for inputs, selects, and more form elements"
+          },
+          {
+            "name": "border-width-control",
+            "token": "border-width-control",
+            "type": "float",
+            "value": 0,
+            "values": {
+              "Light": 0,
+              "Dark": 0
+            },
+            "description": "Used for Sliders."
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    },
+    "03_Typography": {
+      "id": "VariableCollectionId:14145:15187",
+      "modes": [
+        {
+          "id": "14145:0",
+          "name": "Mode 1"
+        }
+      ],
+      "variables": {
+        "colors": [],
+        "numbers": [
+          {
+            "name": "letter-spacing",
+            "token": "letter-spacing",
+            "type": "float",
+            "value": 0
+          }
+        ],
+        "strings": [
+          {
+            "name": "font-regular",
+            "token": "font-regular",
+            "type": "string",
+            "value": "Regular"
+          },
+          {
+            "name": "font-medium",
+            "token": "font-medium",
+            "type": "string",
+            "value": "Medium"
+          },
+          {
+            "name": "font-semi-bold",
+            "token": "font-semi-bold",
+            "type": "string",
+            "value": "Semi Bold"
+          },
+          {
+            "name": "font",
+            "token": "font",
+            "type": "string",
+            "value": "Inter"
+          },
+          {
+            "name": "font-bold",
+            "token": "font-bold",
+            "type": "string",
+            "value": "Bold"
+          },
+          {
+            "name": "font-extra-bold",
+            "token": "font-extra-bold",
+            "type": "string",
+            "value": "Extra Bold"
+          }
+        ],
+        "booleans": []
+      }
+    },
+    "04_Docs (Ignore)": {
+      "id": "VariableCollectionId:17267:1017",
+      "modes": [
+        {
+          "id": "17267:0",
+          "name": "Light"
+        },
+        {
+          "id": "17267:1",
+          "name": "Dark"
+        }
+      ],
+      "variables": {
+        "colors": [
+          {
+            "name": "bg",
+            "token": "bg",
+            "type": "color",
+            "value": "#fafafa",
+            "values": {
+              "Light": "#fafafa",
+              "Dark": "#18181b"
+            }
+          },
+          {
+            "name": "foreground",
+            "token": "foreground",
+            "type": "color",
+            "value": "#18181b",
+            "values": {
+              "Light": "#18181b",
+              "Dark": "#fcfcfc"
+            }
+          },
+          {
+            "name": "muted",
+            "token": "muted",
+            "type": "color",
+            "value": "#52525b",
+            "values": {
+              "Light": "#52525b",
+              "Dark": "#a1a1aa"
+            }
+          },
+          {
+            "name": "foreground-inverse",
+            "token": "foreground-inverse",
+            "type": "color",
+            "value": "#fcfcfc",
+            "values": {
+              "Light": "#fcfcfc",
+              "Dark": "#18181b"
+            }
+          }
+        ],
+        "numbers": [
+          {
+            "name": "radius",
+            "token": "radius",
+            "type": "float",
+            "value": 64,
+            "values": {
+              "Light": 64,
+              "Dark": 64
+            }
+          }
+        ],
+        "strings": [],
+        "booleans": []
+      }
+    }
+  },
+  "metadata": {
+    "exportDate": "2026-11-17T02:32:19.191Z",
+    "figmaFileKey": "unknown",
+    "fileName": "MberX - Design System (HeroUI v3.0.5)",
+    "pluginVersion": "1.0.0",
+    "collectionsFound": 4,
+    "collectionsExported": 4
+  }
+}
