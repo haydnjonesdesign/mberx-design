@@ -217,7 +217,7 @@ Sources: [AFL 2026 ladder feed](https://aflapi.afl.com.au/afl/v2/compseasons/85/
 Recommended page structure; verify the target Figma file before starting.
 
 1. **Page: `00 Index`** — cover art only.
-2. **Page: `01 Components`** — shared tipping patterns, fixture state examples and Game Center blocks, composed from HeroUI where suitable.
+2. **Page: `01 Components`** — shared patterns, composed from HeroUI where suitable.
 3. **Page: `02 Mobile`** —  ordered open-round flow, Game Center, then locked, results and error states.
 4. **Page: `03 Web`** —  ordered open-round flow, Game Center, then locked, results and error states.
 

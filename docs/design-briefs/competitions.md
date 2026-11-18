@@ -6,204 +6,204 @@
 **Design owner / stakeholders:** To confirm
 
 > **Product constraints:** `AGENTS.md`  
-> **Inspiration, not a specification:** `docs/ux-audit/espn-footytips/competitions/espn-footytips-competitions-ux-spec.md`. Reuse useful product principles, not ESPN's feature set or visual design.
+> **Inspiration, not a specification:** `docs/ux-audit/espn-footytips/competitions/espn-footytips-competitions-ux-spec.md`. Reuse the principles, not the feature set or the visuals.
 
 ## 1. Outcome
 
-- **What we are designing:** The MberX experience for seeing/searching comps, creating and managing public or private comps, joining through an invitation or discovery, and the comp landing screen that carries the comp's identity, standings, members, statistics and Chat.
-- **Desired user outcome:** A player can get into the right comp, bring their crew together, and see where they stand without leaving the comp to find the ladder, the members or the banter.
-- **Why now / product context:** Comps provide the social context for MberX's weekly tipping loop. Every player already belongs to the global MberX Competition; private comps and public/private comp joining extend that experience.
-- **Scope:** The comps overview with in-place search; public/private comp creation and joining; the comp landing screen (title, branding, ladder, members, statistics widget, Chat); comp settings including member management (inviting and removing); invitation URLs and sent/joined statuses; corporate branding; ladder and tipper movement; comp Chat with text, image and emoji posts and captain post removal; captain-entered reward text per placing and round; season score reset; responsive mobile and web designs. Show the MberX Competition as the player's default comp.
-- **Out of scope:** New sports or game modes; Flexi/Streak or odds-based scoring; paid entries or purchase flows; a reward catalogue, reward selection from the MberX reward programme, or in-app reward fulfilment; direct messages, reactions or chat notifications; back-office tools. These are not established MberX capabilities. Keep the remaining moderation and reward-entry details that are not specified visible as open decisions.
+- **What we are designing:** Seeing and searching comps, creating and managing public or private comps, joining by invitation or discovery, and the comp landing screen that carries the comp's identity, standings, members, statistics, and its optional Chat, branding and rewards.
+- **Desired user outcome:** A player gets into the right comp, brings their crew in, and sees where they stand without leaving the comp to find the ladder, the members or the banter.
+- **Why now:** Comps are the social layer of the weekly tipping loop. Every player already has the default MberX Competition; private comps and public/private joining extend it.
+- **Scope:** My comps with in-place search; comp creation and joining; the comp landing screen (title, branding, ladder, members, statistics widget, Chat); comp settings with member management and on/off settings for Chat, branding and rewards; invitation URLs and sent/joined statuses; ladder movement; Chat with text, image and emoji posts and captain post removal; captain-entered reward text; season score reset; mobile and web.
+- **Out of scope:** New sports or game modes; Flexi/Streak or odds-based scoring; paid entries; a reward catalogue, reward selection from the MberX reward programme, or in-app fulfilment; DMs, reactions, chat notifications; back-office tools.
 
-The ESPN audit is useful as evidence that players benefit from an at-a-glance view across comps, a clear creation sequence, and a consistent comp context for standings and membership. Do not copy its per-comp tipping model: MberX has one master tipping card per code and round, shared across every comp. Do not copy ESPN's game modes, fees, ads, sport catalogue, or navigation wholesale.
+The ESPN audit shows players benefit from an at-a-glance view across comps, a clear creation sequence and a consistent comp context. Do not copy its per-comp tipping model, game modes, fees, ads, sport catalogue or navigation.
 
 ## 2. Audience and user context
 
-- **Primary audience:** The captain, who creates and manages a comp, invites their crew and wants control and visibility; and the casual tipper, who wants to find their comp and quickly see how they are tracking.
-- **Need / situation:** A captain configures a comp, shares an invitation link and manages its settings and Chat. A player may search for and join a public comp, accept a pending private-comp invitation on My comps without a PIN, or join a private comp through its invitation URL using the app-generated six-character alphanumeric PIN, then return to check the ladder. The captain can reset the PIN in settings. Every player also has the default MberX Competition.
-- **Current behavior or pain point:** MberX's documented product model includes a default MberX Competition, public/private comps, invites and ladders. Detailed screens and interaction rules for the expanded competition management experience are not specified here. Treat the ESPN UX audit as reference material only, not evidence of MberX behavior.
-- **Secondary audiences or roles:** The superfan, who wants useful ladder context without clutter; the reward hunter, who needs any assigned placement reward and winning round to be clear without turning the comp into a shopfront.
-- **Accessibility, device, or environment context:** Mobile-first, one-handed use; web is a wider view of the same product. Keep names, standings, membership status and key actions clear at both sizes. Do not claim a formal WCAG conformance level.
+- **Primary audience:** The captain, who creates and manages a comp, invites their crew and wants control and visibility. The casual tipper, who wants to find their comp and see how they are tracking.
+- **Need / situation:** A captain configures a comp, shares an invitation link and manages settings and Chat. A player searches for a public comp, accepts a pending private invitation on My comps without a PIN, or follows an invitation link and enters the PIN. Then they check the ladder.
+- **Current behaviour or pain point:** MberX's model includes a default MberX Competition, public/private comps, invites and ladders. The screens and interaction rules for the expanded management experience are not specified. Treat the ESPN audit as reference only, not as evidence of MberX behaviour.
+- **Secondary audiences:** The superfan, who wants ladder context without clutter. The reward hunter, who needs the assigned reward and its round to be clear without the comp becoming a shopfront.
+- **Accessibility, device, environment:** Mobile-first, one-handed. Web is a wider view of the same product. Keep names, standings, membership and key actions clear at both sizes. Do not claim a formal WCAG level.
 
 ## 3. Success criteria
 
 | Criterion | How it will be observed | Source / status |
 |---|---|---|
-| A player can tell which comps they belong to, including the default MberX Competition | Ask players to identify their comps and the default one from the overview | Product requirement |
-| A captain can create a public or private comp and find the next step to bring players in | Observe an unassisted creation-to-invitation prototype task | Product capability; flow details To confirm |
-| A player understands that accepting a pending invitation on My comps needs no PIN, while following the invitation link requires it | Ask what action they would take for each comp type and entry point | Product rule |
-| A player can see a pending comp invitation on My comps and accept it there | Give a player a pending invitation and ask them to join without opening the original share channel | Product requirement |
-| A captain understands the two auto-tip options and when sports code/auto-tip settings lock | Ask them to explain the setting and what they can still change after the first match starts | Product rule |
-| Players can explain ladder ranking and identify their movement | Ask players to rank sample tipsters and describe their own movement | Product rule |
-| A player can tell which reward is assigned to which placing and round | Ask players to interpret a sample reward schedule | Product capability |
-| A player understands that leaving a comp removes their tips and reward eligibility | Ask them to describe what happens if they leave | Product rule |
-| A player understands that tips are shared across their comps, not entered separately in each one | Ask what happens to their other comps after tipping | Product requirement |
-| A player can find their standing, the member list and Chat on the comp landing screen at both widths | Ask players to locate each section and their own ladder row without leaving the screen | Proposed design check; movement period To confirm |
-| A captain can invite and remove members without hunting outside the comp | Ask a captain to invite a player and remove one | Product requirement |
+| A player can name their comps, including the default MberX Competition | Ask them to identify their comps and the default one | Product requirement |
+| A captain can create a comp and find the next step to bring players in | Unassisted creation-to-invitation prototype task | Product capability; flow details To confirm |
+| A player knows Accept on My comps needs no PIN, and the link always does | Ask what they would do for each entry point | Product rule |
+| A player can see a pending invitation on My comps and accept it there | Give a pending invitation; ask them to join without the original message | Product requirement |
+| A captain can explain the two auto-tip options and when the code and rule lock | Ask what they can still change after the first match starts | Product rule |
+| Players can explain ladder ranking and identify their own movement | Rank sample tipsters; describe their own movement | Product rule |
+| A player can tell which reward belongs to which placing and round | Interpret a sample reward schedule | Product capability |
+| A player knows leaving removes their tips and reward eligibility | Ask what happens if they leave | Product rule |
+| A player knows one set of tips covers every comp | Ask what happens to their other comps after tipping | Product requirement |
+| A player can find their standing, the members and Chat on the landing screen at both widths | Locate each section and their own row without leaving the screen | Design check; movement period To confirm |
+| A captain can invite and remove members without leaving the comp | Ask a captain to invite one player and remove another | Product requirement |
 
-No analytics targets or conversion benchmarks are established. Any future quantitative target needs product agreement.
+No analytics targets or conversion benchmarks are set. Any quantitative target needs product agreement.
 
 ## 4. Primary flow
 
-1. Open **My comps** and see the default MberX Competition alongside other comps and pending invitations; search for a comp from this screen.
-2. Choose **Create a comp**; set its name, applicable code, auto-tip rule, privacy, manually entered placement/round rewards and, for a corporate comp, branding. The app generates the private-comp PIN; the captain can reset it in settings.
-3. From the new comp, share its unique invitation URL. The captain can send it manually through text message or email and see whether it is sent or joined; the invitee sees a pending invitation on My comps until accepting.
-4. A player can join a public comp from search, or see a pending invitation on **My comps** and tap **Accept**. Accepting a pending invitation in the app needs no PIN. A player following the invitation link must still enter the app-generated six-character alphanumeric PIN, even when already signed in. Successful acceptance joins immediately, with no captain approval step.
-5. Land on the comp screen and take in the whole comp in one place: title and branding, the ladder with personal standing and movement, the member list, the statistics widget and Chat. Captains manage members — inviting and removing — from comp settings. Tippers can leave; leaving removes the player's tips, resets their ladder position and ends their reward eligibility.
-6. From the comp, go to tipping; tip once on the code's master tipping card. The comp does not create a separate tip set. After tipping has commenced, the captain cannot change the sports code or auto-tip rule. Before the next season starts, comp player scores (tips and margin) reset to zero.
+1. Open **My comps**: the default MberX Competition, other comps, pending invitations, and search.
+2. **Create a comp**: name, code, auto-tip rule, privacy, and Chat, branding and rewards set on or off, with their content. The app generates the private PIN; the captain can reset it in settings.
+3. **Invite**: share the unique URL by text or email. The captain sees sent or joined; the invitee sees a pending invitation on My comps.
+4. **Join**: tap Accept on My comps (no PIN), or follow the link and enter the six-character alphanumeric PIN, even when signed in. Joining is immediate; no captain approval.
+5. **Land**: title, ladder with standing and movement, members and statistics widget, plus branding, Chat and rewards where the captain has enabled them. Captains manage members and settings from settings. Tippers can leave; leaving removes their tips, resets their ladder position and ends reward eligibility.
+6. **Tip**: one master card per code and round, shared by every comp. The comp creates no separate tip set. Code and auto-tip rule lock at the first match. Scores reset before the next season.
 
-**Key branches or alternate paths:** Players can arrive with only their automatically joined MberX Competition; comp search may return no matches. A private comp can be joined two ways: accepting the pending invitation on My comps, which needs no PIN, or following the invitation link, which always requires the app-generated PIN. Recipients see pending invitations until they accept, while captains can see sent/joined status. Acceptance does not wait for captain approval. An invite, join, upload, post or save may fail or already be complete. The captain can reset the PIN without invalidating the link, and links do not expire. How the link creates or associates a pending invitation remains to confirm. Tipping commences when the first match starts; from then the sports code and auto-tip rule are locked while other settings remain manageable. There are no comp-size limits. The comp landing screen must hold up when Chat is empty or when the player is the only non-captain member.
+**Key branches or alternate paths:** A player may have only the default comp. Search may return no matches. A private comp has two join paths: Accept (no PIN) or link (always PIN). Recipients see pending invitations until they accept; captains see sent/joined. Acceptance never waits for approval. Invites, joins, uploads, posts and saves can fail or already be complete. The captain can reset the PIN without invalidating the link; links never expire. How the link creates a pending invitation is To confirm. Code and auto-tip lock at the first match; other settings stay editable. There are no comp-size limits. The landing screen must hold up with empty Chat, or when the player is the only non-captain member.
 
 ## 5. Screen inventory
 
 | Order | Screen / view | User goal | Key information and actions | Entry / exit |
 |---:|---|---|---|---|
-| 1 | My comps | See, search and choose a comp or accept an invitation | Default MberX Competition; joined comps; clearly distinguished pending invitations with an Accept action; in-place comp search; create and enter actions; concise ladder context | App navigation → comp, create, search or invitation acceptance |
-| 2 | Create a comp | Configure and create a comp | Name; AFL or NRL code; auto-tip rule (zero points or away-team result); public/private; placement and round rewards entered as free text; optional corporate brand/logo | Overview → create success or recoverable error |
-| 3 | Comp landing screen | Take in the whole comp and check standing | **Title and branding** (name, logo, privacy/PIN context); **ladder** with correct-tip count, margin total (sum of the player's first/last-round margin picks), most-recent-tip ordering, the player's row and movement up/down; **members** roster; **statistics widget**; **Chat** with text, image and emoji posts. Route to tipping and, for captains, to settings | Comp selection from My comps → settings or tipping |
-| 4 | Comp settings | Manage the comp and its members | Editable comp setup, logo, reward text entries (200 words each); reset the app-generated six-character alphanumeric PIN; **member management: invite players with the invitation URL and remove tippers**; sports code and auto-tip rule become read-only once the first match starts | Comp landing → save or recoverable error; back to comp |
+| 1 | My comps | See, search and choose a comp, or accept an invitation | Default comp; joined comps; pending invitations with Accept; in-place search; create and enter | App navigation → comp, create, search, invitation |
+| 2 | Create a comp | Configure and create | Name; AFL or NRL; auto-tip rule; public/private; Chat, branding and rewards on or off; reward text per placing and round; logo | My comps → success or recoverable error |
+| 3 | Comp landing screen | Take in the whole comp | Title; branding when enabled; ladder with correct tips, margin total, most-recent ordering, own row and movement; members roster; statistics widget; Chat when enabled; rewards when enabled | My comps → settings or tipping |
+| 4 | Comp settings | Manage the comp and its members | Setup; **Chat, branding and rewards each enabled or disabled**; logo and reward text (200 words each); PIN reset; **member management: invite by URL, remove tippers**; code and auto-tip read-only after the first match | Landing → save or recoverable error |
 
-The comp landing screen is a single destination, not a tab set. Title, branding, ladder, members, statistics widget and Chat all live on it, in that hierarchy. Settings is the only separate management surface, and it owns member management (inviting and removing) rather than the landing screen. Chat is a section of the landing screen, not a separate destination and not a general direct-message feature.
+The landing screen carries the title, ladder, members and statistics widget, plus branding, Chat and rewards when the captain has enabled them. Settings is the separate management surface and owns member management and the three on/off settings. Chat is not a direct-message feature.
 
 ## 6. State coverage
 
 | Screen / component | Relevant state | Expected user need / design response | Notes |
 |---|---|---|---|
-| My comps | Loading / error | Understand that comp data is loading or unavailable and have a clear recovery path | Do not show an empty list as though the default comp is absent; default membership is automatic |
-| My comps | Only default comp / additional comps | Recognise the MberX Competition and discover create/join actions; distinguish it from player-created comps | Additional cards and summaries depend on confirmed ladder data |
-| My comps search | Searching / no matches / failure | Keep search in the comps overview; explain no matches and allow a new search | Search result ordering/filter options To confirm |
-| Create a comp | Validation / submitting / success / failure | Explain required fields, preserve entered values, prevent duplicate creation and confirm next steps | Required-field rules and exact success response To confirm |
-| Auto-tip rule | Zero-point rule / away-team rule | Make the selected fallback explicit before creation and show the saved rule in settings | A missing tip is treated as a no-tip (zero points) or the away team when the match begins or lockout is enabled; void, postponed and abandoned fixtures award zero points |
-| Brand/logo | No logo / upload / invalid file / pending or failed | Show preview, supported constraints and recoverable errors | Corporate brand approval, file constraints and moderation To confirm |
-| Invitation on My comps | Pending / accepting / joined / failure | Make the pending invitation distinct from active comp membership; allow Accept from this screen with no PIN; confirm joining only after acceptance | Invitation links do not expire; do not require the player to return to the message containing the share link |
-| Invitation URL join | PIN required / invalid PIN / joined / failure | Require the PIN when following the link, even when signed in; explain the PIN and allow re-entry | No attempt limit or lockout applies |
-| Private-comp PIN in settings | Generated / reset | Make clear that the app generated the six-character alphanumeric PIN; let the captain reset it and confirm the reset | Reset invalidates the old PIN but not the invitation link |
-| Comp landing — ladder section | Loading / no score data / populated / rank movement | Distinguish unavailable data from zero; make the player's position and movement easy to find without leaving the screen | Order is correct tips, then lowest margin total, then most recent tip timestamp; movement reference period To confirm |
-| Comp landing — members section | Populated / long roster / no other members | Show who is in the comp and make the roster scannable in place; management actions stay in settings | Only the acting player plus the captain is a realistic early state |
-| Comp landing — statistics widget | Populated / no data / loading | Give a compact read on the comp's round or season without competing with the ladder | Which statistics are shown To confirm |
-| Comp landing — Chat section | Empty / populated / posting / failed / image upload / removed post | Support text, image and emoji posts in place on the landing screen; make captain removal clear | |
-| Settings | Before / after the first match starts | Clearly lock sports code and auto-tip rule from the first match start; allow other settings to be managed | Which other settings stay editable To confirm |
-| Settings — member management | Invite available / sent / joined / removing a tipper / removed | Keep inviting and removing in settings, distinct from the landing roster; confirm the leave consequence before acting | Leaving removes all tips, resets ladder position and ends reward eligibility; removing a tipper changes nothing else |
-| Rewards | Placement and award-round entry / over limit | Let the captain type reward details for a placing and round; make clear the captain fulfils rewards outside MberX; stop at the 200-word limit with a clear count | No in-app reward catalogue or fulfilment flow |
-| Season rollover | Before next season | Show tips and margin scores reset to zero one week before the new season starts | Whether reward eligibility resets with the scores To confirm |
+| My comps | Loading / error | Show structure and a recovery path | Never look like the default comp is missing |
+| My comps | Default only / additional comps | Recognise the default comp; find create and join | Card summaries depend on ladder data |
+| My comps search | Searching / no matches / failure | Explain no matches; allow a new search | Ordering and filters To confirm |
+| Create a comp | Validation / submitting / success / failure | Explain required fields, keep entered values, prevent duplicates | Required fields and success response To confirm |
+| Auto-tip rule | Zero points / away team | Make the fallback explicit before creation; show the saved rule | Missing tip resolves at match start or lockout; void, postponed and abandoned fixtures score zero for everyone |
+| Brand/logo | Disabled / enabled / upload / invalid / pending / failed | Show branding on the landing screen only when enabled; preview, constraints, recoverable errors | Approval and file rules To confirm |
+| Invitation on My comps | Pending / accepting / joined / failure | Distinct from membership; Accept with no PIN; confirm after joining | Links never expire; don't send the player back to the original message |
+| Invitation link join | PIN required / invalid / joined / failure | Require the PIN even when signed in; allow re-entry | No attempt limit or lockout |
+| PIN in settings | Generated / reset | Show that the app generated it; confirm the reset | Reset invalidates the PIN, not the link |
+| Landing — ladder | Loading / no data / populated / movement | Distinguish no data from zero; own row and movement obvious in place | Order: tips, margin total, most recent; movement period To confirm |
+| Landing — members | Populated / long roster / no others | Scannable roster; no management controls here | Two members is a realistic early state |
+| Landing — statistics widget | Populated / no data / loading | Compact, secondary to the ladder | Content To confirm |
+| Landing — Chat | Disabled / empty / populated / posting / failed / image upload / removed post | Show Chat only when enabled; text, image and emoji in place; captain removal clear | Whether disabling hides existing posts To confirm |
+| Settings | Before / after first match | Lock code and auto-tip; keep the rest editable | Which settings stay editable To confirm |
+| Settings — Chat, branding, rewards | Enabled / disabled | One clear on/off control each, stating what it turns on; disabling takes effect on the landing screen | Defaults, and whether existing content is hidden or kept, To confirm |
+| Settings — member management | Invite / sent / joined / removing / removed | Keep invite and remove in settings, apart from the roster; confirm consequences | Leave removes tips, resets position, ends reward eligibility; captain removal changes nothing else |
+| Rewards | Disabled / entry / over limit / populated | Show rewards only when enabled; free text per placing and round; captain fulfils outside MberX; stop at 200 words with a count | No catalogue or fulfilment flow |
+| Season rollover | Before next season | Show tips and margin resetting to zero one week out | Whether reward eligibility resets To confirm |
 
 ## 7. Components and patterns
 
-Use MberX's dark HeroUI design direction in `DESIGN.md`. Search the HeroUI library before custom work and record the candidate checked; no MberX competition-specific component source is currently documented.
+Use the dark HeroUI direction in `DESIGN.md`. Search the library before custom work and name the candidate checked. No MberX comp-specific component source exists yet.
 
-| Pattern / component | Direction | Existing source or rationale | Design notes |
+| Pattern / component | Direction | Source or rationale | Design notes |
 |---|---|---|---|
-| Primary and secondary actions | Reuse | HeroUI `Button` candidate; verify against the library | One clear primary action per context; destructive actions must not look like ordinary navigation |
-| Comp overview item and search | Adapt | HeroUI `Card` / `Surface` and `Input` candidates | Make comp identity and standing scannable without implying per-comp tips; keep search on My comps; identify the default comp |
-| Comp landing composition | New | No existing MberX comp screen; compose from HeroUI surfaces and sections | One screen carrying title, branding, ladder, members, statistics widget and Chat; use in-page sections rather than a tab set, and keep the ladder highest in the hierarchy |
-| Search and filters | Reuse / Adapt | HeroUI `Input`, `Select` candidates | Do not add filters until discovery criteria are confirmed |
-| Member list and ladder | Adapt | HeroUI `Table` / list patterns | Preserve the player's identity and standings at narrow widths; don't squeeze a desktop-wide table onto mobile. The roster is read-only on the landing screen |
-| Statistics widget | New | No existing MberX pattern; compose from HeroUI surfaces | Compact, secondary to the ladder; content set To confirm |
-| Settings member management | Adapt | HeroUI `Input`, `Button` and `Modal` / `AlertDialog` candidates | Inviting and removing live in settings only; the landing roster carries no management controls |
-| Create form | Reuse | HeroUI field components and validation patterns | Mark required inputs before submission; preserve entered values after recoverable errors |
-| Share invitation link | Adapt | HeroUI `Button` / share-action candidates | A unique URL for a private comp requires PIN entry when followed; the captain sends it manually through text or email and sees sent/joined status. Do not imply MberX sends an email or text itself |
-| Pending invitation | Adapt | HeroUI `Card` / `Surface` and `Button` candidates | Present on My comps, separate from joined comps, with a clear Accept action; accepting here needs no PIN |
-| Invitation URL join | Adapt | HeroUI `Input` and `Button` candidates | Following the link requires the app-generated six-character alphanumeric PIN, even when signed in |
-| Private-comp PIN reset | Adapt | HeroUI field and `Button` candidates | Captain can reset the app-generated PIN in settings; reset invalidates the PIN but not the invitation link |
-| Comp branding/logo | Adapt | HeroUI upload / field patterns; verify library candidate | Corporate comp branding is supported; exact upload and approval rules To confirm |
-| Ladder movement | Adapt | HeroUI table/list and semantic status candidates | Show up/down movement with text or icon as well as colour; keep tip score, margin total and most-recent-timestamp ordering understandable |
-| Chat composer and posts | Adapt | HeroUI `Input`, `Button`, upload and list candidates | Text, image and emoji posts; captain-only remove action |
-| Reward entry | Adapt | HeroUI `Input` / `Textarea` and form patterns | Captain types reward text per placing and round, up to 200 words per entry; no catalogue picker or fulfilment flow |
-| Season rollover notice | Adapt | HeroUI semantic status pattern | Make clear tips and margin scores reset to zero one week before the new season |
-| Join / leave confirmation | Adapt | HeroUI `Modal` / `AlertDialog` candidates | Use only for consequential actions; do not turn ordinary navigation into a dialog |
-| Empty, success and error feedback | Reuse / Adapt | HeroUI semantic status and alert patterns | Pair colour with labels; provide a recovery action where applicable |
+| Buttons, fields, alerts, modals | Reuse | HeroUI candidates; verify in library | One primary action per context; destructive actions must not look like navigation |
+| Comp card and search | Adapt | HeroUI `Card` / `Surface`, `Input` | Scannable identity and standing; never imply per-comp tips; mark the default comp |
+| Comp landing composition | New | No existing MberX comp screen | Carries title, ladder, members and statistics widget, plus branding, Chat and rewards when enabled; ladder highest. Navigation pattern To confirm |
+| Feature on/off setting | Adapt | HeroUI `Switch` / toggle candidate; verify in library | One control each for Chat, branding and rewards, with the consequence stated. Default state To confirm |
+| Ladder and member list | Adapt | HeroUI `Table` / list patterns | Must survive a phone; roster is read-only here |
+| Statistics widget | New | Compose from HeroUI surfaces | Compact, secondary; content To confirm |
+| Settings member management | Adapt | HeroUI `Input`, `Button`, `Modal` / `AlertDialog` | Invite and remove live in settings only |
+| Create form | Reuse | HeroUI field and validation patterns | Mark required fields up front; keep values on error |
+| Invitation URL share | Adapt | HeroUI `Button` / share actions | Captain sends it; the app does not email or text |
+| Pending invitation | Adapt | HeroUI `Card`, `Button` | On My comps, separate from joined comps; Accept needs no PIN |
+| Invitation link join | Adapt | HeroUI `Input`, `Button` | PIN required even when signed in |
+| PIN reset | Adapt | HeroUI field, `Button` | Reset invalidates the PIN, not the link |
+| Branding/logo | Adapt | HeroUI upload / field patterns | Shown only when branding is enabled; rules To confirm |
+| Ladder movement | Adapt | HeroUI table/list, semantic status | Text or icon as well as colour |
+| Chat composer and posts | Adapt | HeroUI `Input`, `Button`, upload, list | Shown only when Chat is enabled; text, image, emoji; captain remove only |
+| Reward entry | Adapt | HeroUI `Input` / `Textarea` | Shown only when rewards are enabled; 200 words per entry; no picker |
+| Season reset notice | Adapt | HeroUI semantic status | One week before the season |
+| Join / leave confirmation | Adapt | HeroUI `Modal` / `AlertDialog` | Only for consequential actions |
+| Empty, success, error feedback | Reuse / Adapt | HeroUI status and alert patterns | Pair colour with labels; offer recovery |
 
-Icons: HeroUI Icons first; use Lucide only if HeroUI has no suitable icon. Do not create a custom component that duplicates a suitable library component.
+Icons: HeroUI Icons first, Lucide only as fallback. Do not rebuild a component the library already provides.
 
 ## 8. Content language and tone
 
-- **Language / locale:** Australian English. Dates use `14 Nov 2026`; times use AEST/AEDT (Sydney time) where relevant.
-- **Tone:** Matey, confident and quick-witted; sports-bar energy, never casino energy.
-- **Terminology:** Use **My comps**, **comp**, **competition**, **player/tipper**, **captain**, **ladder**, **tip**, **fixture**, **round** and **Chat** accurately. Make clear that one master tipping card serves every comp.
-- **Content constraints:** Sentence case. Full stops in helper text; none in one-sentence buttons. Keep compliance guardrails in `AGENTS.md` in view. Never use betting or wagering language, odds, cash-out language, or claims about winning.
-- **Copy to explore:** Illustrative only: “My comps” and “One set of tips. Every comp you're in gets them.” Keep final copy aligned to the PIN, reward-text and season-reset rules.
+- **Language / locale:** Australian English. Dates as `14 Nov 2026`; times in AEST/AEDT (Sydney).
+- **Tone:** Matey, confident, quick-witted. Sports-bar energy, never casino energy.
+- **Terminology:** **My comps**, **comp**, **competition**, **player/tipper**, **captain**, **ladder**, **tip**, **fixture**, **round**, **Chat**. Make clear one master card serves every comp.
+- **Content constraints:** Sentence case. Full stops in helper text, none in one-sentence buttons. Follow the compliance guardrails in `AGENTS.md`. No betting or wagering language, odds, cash-out language or winning claims.
+- **Copy to explore:** Illustrative only: "My comps" and "One set of tips. Every comp you're in gets them." Align final copy to the PIN, reward-text and season-reset rules.
 
 ## 9. Design-system requirements
 
-- Follow the MberX design principles in `AGENTS.md` and `DESIGN.md`; use dark theme only.
-- Search HeroUI before creating custom UI; identify the matching library candidate and explain any mismatch.
-- Use library components and semantic colour, spacing, radius, typography and effect tokens; do not hardcode values where a suitable token exists.
-- Keep linked component instances, use Auto Layout throughout, and name frames and important layers semantically.
-- Use status colour only for status and pair it with text or another clear indicator. Do not rely on colour alone.
-- Design mobile first and one-handed; web is a wider view of the same product, not a separate product.
+- Follow `AGENTS.md` and `DESIGN.md`; dark theme only.
+- Search HeroUI before custom UI; name the candidate and explain any mismatch.
+- Use library components and semantic colour, spacing, radius, type and effect tokens. No hardcoded values where a token exists.
+- Keep instances linked, use Auto Layout, and name frames and layers semantically.
+- Use status colour only for status, always paired with text or another indicator.
+- Design mobile first and one-handed; web is a wider view, not a second product.
 
 ## 10. Constraints, dependencies, and open questions
 
 - **Constraints / non-negotiables:**
   - Every player is automatically in the global MberX Competition.
-  - Players can create public or private comps. Comp search and a player's pending invitations are shown on the My comps screen.
-  - Comp setup includes name, applicable sports code, auto-tip rule (zero points or away-team result when a player does not tip), rewards entered as free text by the captain for a placing (winner, second, third or wooden spoon) and round, optional corporate branding and public/private visibility. There is no chat content-filter setting; Chat allows text, image and emoji posts.
-  - Invitations use a unique URL for the comp, which the captain sends manually via text message or email. Invitation statuses include sent, pending and joined. A recipient can see a pending invitation on My comps and tap Accept without a PIN. There is no captain approval; accepting joins immediately. A player following the invitation link must still enter the app-generated six-character alphanumeric PIN, even when signed in. Invitation links do not expire. The captain can reset the PIN in settings; resetting it does not invalidate the link. No PIN attempt limit or lockout applies.
-  - The comp landing screen carries the comp title, branding, ladder, members, a statistics widget and Chat. It is one destination; Chat and the roster are sections of it, not separate screens.
-  - Comp settings carries the comp's setup, rewards, PIN reset and member management: inviting players with the invitation URL and removing tippers. Inviting and removing are not on the landing screen.
-  - Captains can manage all comp aspects, remove tippers and remove Chat posts. Tippers can leave. Once tipping has commenced — the moment the first match starts — sports code and auto-tip rule cannot be changed; other settings remain manageable.
-  - A missing tip is treated as a no-tip (zero points) or the away team when the match begins or lockout is enabled, per the comp's auto-tip rule. Void, postponed and abandoned fixtures award zero points to everyone.
-  - Removing a tipper changes nothing beyond removal: their tips, ladder position and reward eligibility are left as they were.
-  - Ladder order is correct-tip count, then the lowest margin total (the sum of the player's first- and last-round margin picks), then the most recent tip submission first.
-  - Leaving a comp removes all of that player's tips, resets their ladder position and ends their reward eligibility.
-  - Player scores (tips and margin) reset to zero one week before the next season starts.
-  - Rewards are not drawn from the MberX reward programme. The captain types reward text in comp settings, limited to 200 words per entry, and fulfils the reward outside the app.
-  - There are no comp-size limits.
-  - Corporate captains can brand a comp with a logo. Chat supports text, image and emoji posts; there is no offensive-content hiding and no related captain setting.
-  - Tipping is per sports code, not per comp. A single master tipping card serves all comps; do not design duplicate per-comp tips or imply comp-specific tipping.
+  - Players create public or private comps. Search and pending invitations live on My comps.
+  - Setup: name, sports code, auto-tip rule, public/private, and Chat, branding and rewards each set on or off. No chat content-filter setting.
+  - Invitations: unique URL, sent manually by text or email. Statuses sent, pending, joined. Accept on My comps needs no PIN; the link always does. No captain approval. Links never expire; no PIN attempt limit; reset invalidates the PIN, not the link.
+  - The landing screen carries title, ladder, members and statistics widget, plus branding, Chat and rewards when enabled.
+  - Settings carries setup, PIN reset, member management (invite and remove), and the on/off controls for Chat, branding and rewards. None of these management controls lives on the landing screen.
+  - Chat, branding and rewards are each independently enabled or disabled by the captain. A disabled feature does not appear on the landing screen. The default state of each is not yet decided.
+  - Captains manage all comp aspects, remove tippers and remove Chat posts. Tippers can leave.
+  - Code and auto-tip rule lock at the first match; other settings stay editable.
+  - A missing tip becomes zero points or the away team at match start or lockout, per the comp's rule. Void, postponed and abandoned fixtures score zero for everyone.
+  - Removing a tipper changes nothing else. Leaving removes all tips, resets ladder position and ends reward eligibility.
+  - Ladder order: correct tips, then lowest margin total (sum of first- and last-round margin picks), then most recent submission.
+  - Tips and margin reset to zero one week before the next season.
+  - Rewards are captain-entered text, 200 words per entry, fulfilled outside the app and not drawn from the MberX reward programme.
+  - Chat: text, image and emoji. No offensive-content hiding, no mute, no related captain setting.
+  - No comp-size limits.
+  - Tipping is per code, not per comp. One master card serves all comps; never design duplicate per-comp tips.
   - Comp sentiment percentages appear only after the round locks.
-  - AFL and NRL only. Do not include ESPN's extra sports, Flexi, Streak, betting odds, paid entry, ads or editorial carousel.
-  - Do not invent social, membership, permission, discovery or admin behavior beyond the decisions recorded here and in `AGENTS.md`.
-  - Use dark MberX styling, Australian English, and mobile-first layouts.
+  - AFL and NRL only. No extra sports, Flexi, Streak, odds, paid entry, ads or editorial carousel.
+  - Do not invent social, membership, permission, discovery or admin behaviour beyond these decisions and `AGENTS.md`.
 - **Dependencies:** Agreed score and margin source of truth; logo upload and corporate brand rules.
 - **Open questions:**
 
 | Question | Who / what resolves it | What it blocks |
 |---|---|---|
-| What logo file constraints, brand approval and removal rules apply? | Product / corporate partner | Branding upload and saved states |
+| What is the default state of the Chat, branding and rewards settings? | Product | Create form and settings defaults |
+| When a feature is disabled, is existing content hidden, kept, or deleted? | Product | Disabled states and any confirmation copy |
+| What logo constraints, approval and removal rules apply? | Product / corporate partner | Branding upload and saved states |
 | How is captain post removal communicated to the comp? | Product / moderation owner | Chat moderation states and copy |
-| Which statistics appear in the comp landing widget? | Product | Widget content and its states |
+| Which statistics appear in the landing widget? | Product | Widget content and its states |
 
-Resolved in this revision, for reference: void, postponed and abandoned fixtures award zero points to everyone; a player following the invitation link must still enter the PIN; resetting the PIN does not invalidate the link; there is no PIN attempt limit; tipping commences when the first match starts; removing a tipper changes nothing else; reward text is limited to 200 words per entry; scores reset one week before the next season starts.
-
-- **Assumptions:** Treat in-app acceptance of a pending invitation on My comps as needing no PIN, and the app-generated six-character alphanumeric PIN as required when following the invitation link. Treat rewards as captain-entered text with fulfilment outside MberX. ESPN's audit is a source of interaction ideas and observed competitor behavior only; its unverified behavior is not a MberX requirement.
+- **Assumptions:** Accepting on My comps needs no PIN; following the link always does. Rewards are captain-entered text fulfilled outside MberX. The ESPN audit is a source of interaction ideas only; its unverified behaviour is not a MberX requirement.
 
 ## 11. Figma file organisation and handoff
 
-Recommended structure; verify the target Figma file and existing team conventions before starting.
+Verify the target file and team conventions before starting.
 
-1. **Page: `00 Index`** — brief, scope boundary and key open decisions.
-2. **Page: `01 Flows`** — My comps invitation acceptance (no PIN), invitation-URL join with PIN, comp creation/invite, public search, comp landing and settings/member-management flow maps.
-3. **Page: `02 Explorations`** — alternatives for the comp landing hierarchy (title, branding, ladder, members, statistics widget, Chat) and for settings member management, with rationale.
-4. **Page: `03 Mobile`** — selected direction, ordered primary paths, and key states.
-5. **Page: `04 Web`** — equivalent wider layouts and states.
+1. **`00 Index`** — brief, scope boundary, open decisions.
+2. **`01 Components`** — shared patterns, fixture state examples, composed from HeroUI where suitable.
+3. **`01 Explorations`** — landing hierarchy, the on/off settings and their disabled states, with rationale.
+4. **`02 Mobile`** — selected direction, ordered paths, key states.
+5. **`03 Web`** — equivalent wider layouts and states.
 
-- **Frame ordering:** Match the primary flow. Name frames `[flow] / [order] [view] / [state]`, for example `COMPS / 01 Overview / Default only`, `CREATE / 02 Details / Validation`, `JOIN / 02 Results / No matches`, `COMP / 03 Landing / Populated`, `COMP / 04 Settings / Member management`.
-- **Responsive/platform variants:** Mobile-first app view and web view. Use the team's established viewport frames; exact dimensions To confirm.
-- **Existing conventions to follow:** Explicit dark theme; HeroUI library-first; MberX naming and atomic-design conventions for any genuinely reusable shared components.
-- **Review / handoff expectation:** Show My comps with joined comps and pending invitations, in-app acceptance without a PIN, link-following join with mandatory PIN entry, the comp landing screen as one composed view (title, branding, ladder, members, statistics widget, Chat), settings with member management (inviting and removing) and the generated PIN/reset, comp creation and settings before/after the first match starts, public/private join paths, ladder ordering and movement, leave consequences, Chat posting and captain post removal, reward text entry with its 200-word limit, the season reset, and relevant states. Annotate remaining open decisions; do not present unresolved rules as settled.
+- **Frame ordering:** Follow the primary flow. Name frames `[flow] / [order] [view] / [state]`, e.g. `COMPS / 01 Overview / Default only`, `CREATE / 02 Details / Validation`, `JOIN / 02 Results / No matches`, `COMP / 03 Landing / Populated`, `COMP / 03 Landing / Chat off`, `COMP / 04 Settings / Feature toggles`, `COMP / 04 Settings / Member management`.
+- **Responsive variants:** Mobile-first app view and web view. Use the team's viewport frames; exact dimensions To confirm.
+- **Conventions:** Explicit dark theme; HeroUI library-first; MberX naming and atomic design for genuinely shared components.
+- **Handoff expectation:** Cover My comps with pending invitations, Accept without a PIN, link join with PIN, the landing screen composed with branding, Chat and rewards both on and off, settings with feature toggles, member management and PIN reset, creation and settings before and after the first match, ladder order and movement, leave consequences, Chat posting and post removal, reward text with its 200-word limit, and the season reset. Annotate open decisions; do not present unresolved rules as settled.
 
 ## 12. Review checklist
 
-- [ ] The MberX Competition is clearly identified as the default comp.
-- [ ] The comp overview does not imply a separate set of tips per comp.
-- [ ] My comps shows pending invitations separately from joined comps and lets the player tap Accept there.
-- [ ] Public comp search is on My comps; accepting a pending invitation there needs no PIN and joins immediately without approval.
-- [ ] Following a private comp's invitation link requires the app-generated six-character alphanumeric PIN, even when signed in.
-- [ ] Private-comp settings show that the app generated the PIN and let the captain reset it; reset invalidates the PIN but not the link.
-- [ ] Creation and invitation states have clear feedback and recovery; invitation links are shown as non-expiring, with no PIN attempt limit.
-- [ ] The comp landing screen carries title, branding, ladder, members, statistics widget and Chat as one destination, with the ladder highest in the hierarchy.
-- [ ] Inviting and removing members live in comp settings; the landing roster is read-only.
-- [ ] Ladder order is correct tips, then lowest margin total, then most recent tip timestamp; movement is shown without relying on colour.
-- [ ] Leaving a comp is confirmed and states that tips are removed, ladder position resets and reward eligibility ends; removing a tipper is shown as changing nothing else.
-- [ ] Void, postponed and abandoned fixtures are shown as scoring zero for everyone.
-- [ ] Mobile and web expose equivalent essential comp information and actions.
-- [ ] Captain/member actions include settings management, post removal, tipper removal and player leave; sports code and auto-tip rule lock from the first match start.
-- [ ] Chat supports text, image and emoji posts; captains can remove posts; no offensive-content filter or related captain setting appears.
-- [ ] Rewards are captain-entered text per placing and round, limited to 200 words, with fulfilment outside the app and no catalogue picker.
-- [ ] The season reset of tips and margin scores to zero is represented as happening one week before the new season.
-- [ ] No extra sport, custom scoring, paid entry, odds or advertising surface has been added by implication.
-- [ ] HeroUI candidates were checked before custom patterns; deviations are explained.
+- [ ] The default MberX Competition is clearly identified.
+- [ ] Nothing implies a separate set of tips per comp.
+- [ ] My comps shows pending invitations apart from joined comps, with Accept.
+- [ ] Accept needs no PIN; following the link always does, even when signed in.
+- [ ] PIN reset invalidates the PIN but not the link; links are shown as non-expiring.
+- [ ] Creation and invitation states have clear feedback and recovery.
+- [ ] The landing screen carries title, ladder, members and statistics widget, plus branding, Chat and rewards when enabled; ladder highest.
+- [ ] Chat, branding and rewards each have an on/off setting in settings and creation, and disabled features are absent from the landing screen.
+- [ ] Invite and remove live in settings; the landing roster is read-only.
+- [ ] Ladder order is correct tips, then lowest margin total, then most recent submission; movement is not colour-only.
+- [ ] Leaving is confirmed and states tips removed, position reset, reward eligibility ended; captain removal changes nothing else.
+- [ ] Void, postponed and abandoned fixtures show zero for everyone.
+- [ ] Mobile and web expose equivalent essential information and actions.
+- [ ] Chat supports text, image and emoji, with captain removal and no filter or mute.
+- [ ] Rewards are captain text, 200 words, fulfilled outside the app, no picker.
+- [ ] The season reset is shown as one week before the new season.
+- [ ] No extra sport, custom scoring, paid entry, odds or advertising crept in.
+- [ ] HeroUI candidates were checked; deviations are explained.
 - [ ] Dark theme, Australian English and MberX terminology are reflected.
-- [ ] Open decisions remain visible in the handoff rather than being silently resolved in the mock-up.
+- [ ] Open decisions remain visible rather than silently resolved.
